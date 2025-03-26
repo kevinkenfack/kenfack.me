@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      siteUrl: '',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kenfack-me.vercel.app/',
       ogImageBlogBasePath: ''
     }
   },

@@ -14,7 +14,9 @@
             :src="doc.image"
             :alt="doc.title"
             class="w-full aspect-square object-cover rounded-2xl mb-6"
-            placeholder="blur"
+            :placeholder="[50, 30, 75, 5]"
+            width="auto"
+            height="auto"
             format="webp"
           />
 
