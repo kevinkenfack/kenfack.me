@@ -9,13 +9,15 @@
             {{ doc.title }}
           </h1>
 
-          <!-- Affichage de l'image si disponible -->
-          <img
+          <NuxtImg
             v-if="doc.image"
             :src="doc.image"
             :alt="doc.title"
             class="w-full aspect-square object-cover rounded-2xl mb-6"
+            placeholder="blur"
+            format="webp"
           />
+
           <ContentRenderer :value="doc" />
         </article>
       </ContentDoc>
