@@ -6,20 +6,23 @@
         <a
           :href="bookmark.url"
           target="_blank"
-          class="flex items-center gap-3 hover:bg-gray-100 dark:hover:bg-white/10 p-2 rounded-lg -m-2 text-sm min-w-0"
+          class="group flex items-center gap-3 p-4 bg-white dark:bg-[#0a0a0a] border border-gray-200 dark:border-[#1a1a1a] rounded-lg transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#111111]"
         >
           <UAvatar
             :src="getThumbnail(bookmark.url)"
             :alt="bookmark.label"
-            :ui="{ rounded: 'rounded-md' }"
+            :ui="{ rounded: 'rounded-md transition-transform duration-300 group-hover:scale-110' }"
           />
-          <p class="truncate text-gray-700 dark:text-gray-200">
-            {{ bookmark.label }}
-          </p>
-          <span class="flex-1"></span>
-          <span class="text-xs font-medium text-gray-400 dark:text-gray-600">
-            {{ getHost(bookmark.url) }}
-          </span>
+          <div class="flex-1 min-w-0">
+            <p
+              class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-300 group-hover:text-primary-400 transition-colors duration-300 truncate"
+            >
+              {{ bookmark.label }}
+            </p>
+            <span class="text-xs text-gray-600 dark:text-gray-400">
+              {{ getHost(bookmark.url) }}
+            </span>
+          </div>
         </a>
       </li>
     </ul>
@@ -33,7 +36,6 @@ useSeoMeta({
   title: "Favoris | Kevin Kenfack",
   description,
   ogDescription: description,
-  
 });
 
 const bookmarks = [
@@ -113,7 +115,6 @@ const bookmarks = [
     url: "https://en.rakko.tools/",
   },
 ];
-
 
 function getHost(url) {
   const parsedUrl = new URL(url);

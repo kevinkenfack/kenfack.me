@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-[#262626e6] p-6 rounded-lg shadow-lg bg-white/90 shadow-gray-800/5">
+  <div class="bg-white dark:bg-[#0a0a0a] border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#111111]">
     <h2 class="
       text-xs font-bold uppercase 
       tracking-wider 
@@ -8,7 +8,7 @@
       border-b pb-2 
       border-gray-200 dark:border-gray-800
     ">
-      Retrouvez-moi sur mes réseaux
+      Retrouvez-moi sur mes réseaux
     </h2>
     <div class="space-y-4">
       <NuxtLink
@@ -22,7 +22,7 @@
           py-2 px-3 
           rounded-lg 
           transition-all duration-300 
-          hover:bg-gray-100 dark:hover:bg-gray-800
+          hover:bg-gray-100 dark:hover:bg-[#111111]
           group
         "
       >
@@ -31,15 +31,15 @@
             :name="link.icon" 
             class="
               w-6 h-6 
-              text-gray-600 dark:text-gray-300 
-              group-hover:text-primary-400 dark:group-hover:text-primary-400
+              text-gray-600 dark:text-gray-500 
+              group-hover:text-primary-400 
               transition-colors duration-300
             "
           />
           <span class="
             text-sm font-medium 
             text-gray-700 dark:text-gray-300 
-            group-hover:text-primary-400 dark:group-hover:text-primary-400
+            group-hover:text-primary-400 
             transition-colors duration-300
           ">
             {{ link.name }}
@@ -50,7 +50,7 @@
           class="
             h-5 w-5 
             text-gray-400 dark:text-gray-600 
-            group-hover:text-primary-400 dark:group-hover:text-primary-400
+            group-hover:text-primary-400 
             transition-colors duration-300
           " 
           viewBox="0 0 20 20" 
