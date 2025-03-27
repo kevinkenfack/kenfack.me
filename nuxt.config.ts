@@ -16,12 +16,19 @@ export default defineNuxtConfig({
       ogImageBlogBasePath: ''
     }
   },
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
   ui: {
     icons: ["heroicons", "lucide"],
   },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
+      meta: [
+        { name: 'theme-color', content: '#000000' }
+      ],
       htmlAttrs: {
         lang: "en",
         class: "h-full",
