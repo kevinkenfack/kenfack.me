@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-[#0a0a0a] border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#111111]">
+  <div class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#080808]">
     <h2 class="
       text-xs font-bold uppercase 
       tracking-wider 

@@ -11,7 +11,7 @@
           v-slot="{ data }"
         >
           <div
-            class="group p-6 bg-white dark:bg-[#0a0a0a] border border-gray-200 dark:border-[#1a1a1a] rounded-lg transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#111111]"
+            class="group p-6 bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#080808]"
           >
             <h2
               class="text-lg font-semibold font-display tracking-tight text-gray-800 dark:text-gray-300 group-hover:text-primary-400 transition-colors duration-300"
@@ -39,5 +39,12 @@ const description =
 useSeoMeta({
   title: "Laboratoire | Kevin Kenfack",
   description,
+  ogDescription: description,
+  ogTitle: "Laboratoire",
+  ogImage: "/og-image.jpg",
+  twitterCard: "summary_large_image",
+  ogSiteName: "Kevin Kenfack",
+  ogType: "website",
+  ogUrl: "https://kenfack-me.vercel.app/lab",
 });
 </script>
