@@ -1,6 +1,6 @@
 <template>
   <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50">
-    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl bg-opacity-75  (10% opaque)">
       <ul
         class="flex items-center my-4 px-3 text-sm font-medium text-gray-800 rounded-xl shadow-lg shadow-gray-800/5 ring-1 backdrop-blur bg-white dark:bg-[#0a0a0a] dark:text-gray-200 dark:ring-white/20 ring-gray-900/5"
       >

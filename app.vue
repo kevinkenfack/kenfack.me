@@ -1,17 +1,12 @@
 <template>
-  <div class="min-h-screen 
-    bg-gray-100 dark:bg-black 
-    bg-[url('/noise.svg')] dark:bg-[url('/noise.svg')] 
-    bg-repeat bg-fixed">
-    <NuxtLoadingIndicator color="#14b8a6" />
-    <AppNavbar />
-    <div class="h-32"></div>
-    <UContainer>
-      <NuxtPage />
-    </UContainer>
-    <div class="h-32"></div>
-    <AppFooter />
-  </div>
+  <NuxtLoadingIndicator color="#14b8a6" />
+  <AppNavbar />
+  <div class="h-32"></div>
+  <UContainer>
+    <NuxtPage />
+  </UContainer>
+  <div class="h-32"></div>
+  <AppFooter />
 </template>
 
 <style>
