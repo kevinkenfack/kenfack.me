@@ -28,9 +28,10 @@ useSeoMeta({
   title: "Kevin Kenfack",
   ogTitle: "Kevin Kenfack",
   ogDescription: "Je suis un developpeur FrontEnd et un jeune entrepreneur du Cameroun, je suis passionne par la creation de sites web beaux, intuitifs et réactifs.",
-  ogImage: "/og-image.png",
+  ogImage: "/og-image.jpg",
   twitterCard: "summary_large_image",
   ogSiteName: "Kevin Kenfack",
+  ogUrl: "https://kevin-kenfack.vercel.app/",
   description:
     "Je suis un développeur FrontEnd et un jeune entrepreneur du Cameroun, je suis passionné par la création de sites web beaux, intuitifs et réactifs.",
 });
