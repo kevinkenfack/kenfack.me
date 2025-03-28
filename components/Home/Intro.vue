@@ -31,7 +31,8 @@ useSeoMeta({
   ogImage: "/og-image.jpg",
   twitterCard: "summary_large_image",
   ogSiteName: "Kevin Kenfack",
-  ogUrl: "https://kevin-kenfack.vercel.app/",
+  ogType: "website",
+  ogUrl: "https://kenfack-me.vercel.app/",
   description:
     "Je suis un développeur FrontEnd et un jeune entrepreneur du Cameroun, je suis passionné par la création de sites web beaux, intuitifs et réactifs.",
 });
