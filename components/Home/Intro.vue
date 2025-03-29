@@ -14,9 +14,9 @@
     </p>
     <p class="text-gray-900 dark:text-gray-400">
       Je suis actuellement développeur front-end chez
-      <a href="https://www.dotworld.ch/" target="_blank" class="text-primary-400 font-bold">Dotworld</a>
+      <a href="https://www.dotworld.ch/" target="_blank" class="text-primary-400 hover:font-bold">Dotworld</a>
       et en parallèle, je gère
-      <a href="https://uiroom.pro/" target="_blank" class="text-primary-400 font-bold">Uiroom</a>, 
+      <a href="https://uiroom.pro/" target="_blank" class="text-primary-400 hover:font-bold">Uiroom</a>, 
       mon agence web où nous offrons des services de design, copywriting et développement
       pour les startups, SaaS et entrepreneurs.
     </p>

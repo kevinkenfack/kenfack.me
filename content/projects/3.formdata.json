@@ -1,8 +1,8 @@
 {
-  "name": "Formdata",
-  "url": "https://formdata.cc",
-  "description": "Relay form data to your email for free",
-  "thumbnail": "/projects/formdata.png",
+  "name": "case-cobra",
+  "url": "https://pochette-phone.vercel.app/",
+  "description": "Une boutique de commerce électronique moderne pour les étuis de téléphone personnalisés",
+  "thumbnail": "/projects/casecobra.png",
   "status": "Active",
   "opensource": true
 }

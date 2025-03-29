@@ -1,8 +1,8 @@
 {
-  "name": "Bring back the bird",
-  "url": "https://github.com/fayazara/bring-back-twitter-bird",
-  "description": "Chrome extension to replace the new Twitter logo with the original bird",
-  "thumbnail": "/projects/twitter.svg",
+  "name": "Transition",
+  "url": "https://image-transition-viewer.vercel.app/",
+  "description": "Application de transition dimage base sur un systeme d'avant et d'apres",
+  "thumbnail": "",
   "status": "Active",
   "opensource": true
 }

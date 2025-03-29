@@ -81,7 +81,7 @@ const links = [
   },
   {
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/fayaz-aralikatti/",
+    url: "https://www.linkedin.com/in/",
     icon: "mdi:linkedin",
   },
   {

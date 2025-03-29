@@ -1,8 +1,8 @@
 {
-  "name": "Sketch to UI",
-  "url": "https://github.com/fayazara/sketch-to-ui",
-  "description": "Covert bad hand drawn UI sketch to code using GPT 4 Vision model",
-  "thumbnail": "/projects/sketch-to-ui.png",
+  "name": "Tague Meet",
+  "url": "https://tague-meet.vercel.app/",
+  "description": "Application de vidéoconférence basée sur le web avec connexion sécurisée et partage d'écran.",
+  "thumbnail": "/projects/taguemeet.png",
   "status": "Active",
   "opensource": true
 }

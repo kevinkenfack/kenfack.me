@@ -1,8 +1,8 @@
 {
-  "name": "Imbox",
-  "url": "https://dub.sh/imbox",
-  "description": "Temporary inbox as a chrome extension",
-  "thumbnail": "/projects/imbox.png",
+  "name": "Restropro",
+  "url": "https://resto-frontend-one.vercel.app/",
+  "description": "Landing page d'un saas de gestion de restaurant",
+  "thumbnail": "/projects/restropro.png",
   "status": "Active",
   "opensource": true
 }

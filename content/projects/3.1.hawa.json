@@ -1,8 +1,8 @@
 {
-  "name": "Hawa",
-  "url": "https://github.com/fayazara/hawa",
-  "description": "A simple white noise app which sits in the menubar",
-  "thumbnail": "/projects/hawa.png",
+  "name": "AnalyticsRank",
+  "url": "https://kevin.tagueacademy.com/",
+  "description": "SaaS d'analyse web simplifié : suivi du trafic et des utilisateurs sans configuration complexe.RéessayerKK",
+  "thumbnail": "/projects/analyticsrank.png",
   "status": "Active",
   "opensource": true
 }

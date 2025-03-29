@@ -1,8 +1,8 @@
 {
-  "name": "Simple Online Tools",
-  "url": "https://simpleonline.tools",
-  "description": "Simple online tools for everyday use",
-  "thumbnail": "/projects/simpleonline-tools.png",
+  "name": "Xora-landing-page",
+  "url": "https://xora-landing-page-saas.vercel.app/",
+  "description": "Modèle de landingpage pour présenter un produit SaaS de montage vidéo assisté par l'IA.",
+  "thumbnail": "/projects/xora.png",
   "status": "WIP",
   "opensource": true
 }
