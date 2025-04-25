@@ -1,8 +1,0 @@
-{
-  "name": "Tague Meet",
-  "url": "https://tague-meet.vercel.app/",
-  "description": "Application de vidéoconférence basée sur le web avec connexion sécurisée et partage d'écran.",
-  "thumbnail": "/projects/taguemeet.png",
-  "status": "Active",
-  "opensource": true
-}

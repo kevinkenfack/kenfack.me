@@ -1,8 +1,0 @@
-{
-  "name": "Transition",
-  "url": "https://image-transition-viewer.vercel.app/",
-  "description": "Application de transition dimage base sur un systeme d'avant et d'apres",
-  "thumbnail": "",
-  "status": "Active",
-  "opensource": true
-}

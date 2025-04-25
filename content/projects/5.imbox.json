@@ -1,8 +1,0 @@
-{
-  "name": "Restropro",
-  "url": "https://resto-frontend-one.vercel.app/",
-  "description": "Landing page d'un saas de gestion de restaurant",
-  "thumbnail": "/projects/restropro.png",
-  "status": "Active",
-  "opensource": true
-}
