@@ -7,7 +7,7 @@
   "homepage": "https://kenfack.me",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_OPTIONS='--max-old-space-size=6144' nuxt build",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' nuxt build",
     "dev": "nuxt dev --hostname 0.0.0.0 --port 3000",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
