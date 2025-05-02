@@ -62,10 +62,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
     minify: true,
-    compressPublicAssets: true,
-    routeRules: {
-      '/**': { isr: false }
-    }
+    compressPublicAssets: true
   },
   build: {
     transpile: ['@nuxt/ui']
