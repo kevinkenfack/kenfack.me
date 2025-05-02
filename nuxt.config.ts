@@ -68,6 +68,12 @@ export default defineNuxtConfig({
   build: {
     transpile: ['@nuxt/ui']
   },
+  nitro: {
+    prerender: {
+      routes: [],         // aucune route à générer
+      crawlLinks: false,  // ne pas crawler les liens internes
+    }
+  },
   // Configuration minimale pour empêcher le prérendu sans supprimer Nitro
   routeRules: {
     '/**': { prerender: false }
