@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     "@nuxt/ui",
     "nuxt-icon",
@@ -10,10 +10,14 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt"
   ],
+  css: [
+    '~/assets/css/main.css'
+  ],
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kenfack-me.vercel.app/',
-      ogImageBlogBasePath: ''
+      ogImageBlogBasePath: '',
+      availabilityStatus: process.env.NUXT_PUBLIC_AVAILABILITY_STATUS || 'unavailable'
     }
   },
   colorMode: {
@@ -22,6 +26,8 @@ export default defineNuxtConfig({
   },
   ui: {
     icons: ["heroicons", "lucide"],
+    global: true,
+    safelistColors: ['primary']
   },
   app: {
     pageTransition: { name: "page", mode: "out-in" },

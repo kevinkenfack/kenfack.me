@@ -56,9 +56,9 @@ const items = [
     path: "/articles",
     icon: "solar:document-add-outline",
   },
-  { name: "Laboratoire",
-    path: "/lab", 
-    icon: "heroicons:beaker"
+  { name: "À propos",
+    path: "/about", 
+    icon: "heroicons:user-circle"
   },
   {
     name: "Qu'y a-t-il dans mon sac ?",

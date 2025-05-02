@@ -1,39 +1,96 @@
 <template>
   <div class="space-y-6">
-    <NuxtImg src="/avatar.png" alt="Kevin Kenfack"
-      class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-12 w-12 sm:h-16 sm:w-16"
-      sizes="48px sm:64px" placeholder format="webp" />
-    <h1 class=" text-xl md:text-4xl sm:text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
-      Bonjour je suis Kevin Kenfack,<br/> mais vous pouvez m'appeler Joël.
+    <div class="flex items-center gap-4">
+      <div class="relative">
+        <NuxtImg 
+          src="/avatar.png" 
+          alt="Kevin Kenfack"
+          class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-12 w-12 sm:h-16 sm:w-16"
+          sizes="48px sm:64px" 
+          placeholder 
+          format="webp" 
+        />
+        <div 
+          class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-white dark:border-gray-900 animate-pulse"
+          :class="{
+            'bg-green-500': availabilityStatus === 'available',
+            'bg-yellow-500': availabilityStatus === 'busy',
+            'bg-red-500': availabilityStatus === 'unavailable'
+          }"
+        ></div>
+      </div>
+      <div class="flex flex-col">
+        <span 
+          class="text-sm font-medium px-3 py-1 rounded-full"
+          :class="{
+            'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400': availabilityStatus === 'available',
+            'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400': availabilityStatus === 'busy',
+            'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400': availabilityStatus === 'unavailable'
+          }"
+        >
+          {{ availabilityText }}
+        </span>
+      </div>
+    </div>
+    <h1 class="text-xl md:text-4xl sm:text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
+      Bonjour, je suis Kevin Kenfack,<br />mais vous pouvez m'appeler Joël.
     </h1>
     <p class="text-gray-900 dark:text-gray-400">
-      Je suis un développeur fullstack spécialisé dans l'écosystème JavaScript et
-      TypeScript, notamment avec React Next.js, Node.js et Express.js. Passionné
-      par la création d'applications web et de sites web, je partages mes
-      réflexions principalement autour de la tech et du design.
+       Je suis un Développeur spécialisé dans l'écosystème JavaScript/TypeScript, je travaille
+       principalement avec React, Next.js, Node.js Je suis passionné par la création d'interfaces
+       web modernes et performantes. J'aime partager mes réflexions sur la tech et le design.
     </p>
     <p class="text-gray-900 dark:text-gray-400">
-      Je suis actuellement développeur front-end chez
-      <a href="https://www.dotworld.ch/" target="_blank" class="text-primary-400 hover:font-bold">Dotworld</a>
-      et en parallèle, je gère
+      Actuellement développeur front-end chez 
+      <a href="https://www.dotworld.ch/" target="_blank" class="text-primary-400 hover:font-bold">Dotworld</a>, 
+      je dirige également 
       <a href="https://uiroom.pro/" target="_blank" class="text-primary-400 hover:font-bold">Uiroom</a>, 
-      mon agence web où nous offrons des services de design, copywriting et développement
-      pour les startups, SaaS et entrepreneurs.
+      une agence web où nous aidons startups, SaaS et entrepreneurs à concevoir des produits efficaces grâce à un bon design, un bon message, et un bon code.
     </p>
   </div>
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
+const availabilityStatus = ref(config.public.availabilityStatus || 'unavailable');
+
+const availabilityText = computed(() => {
+  switch (availabilityStatus.value) {
+    case 'available':
+      return 'Disponible pour de nouvelles missions';
+    case 'busy':
+      return 'Occupé, mais contactez-moi';
+    case 'unavailable':
+      return 'Non disponible pour le moment';
+    default:
+      return 'Non disponible pour le moment';
+  }
+});
+
 useSeoMeta({
   title: "Kevin Kenfack",
   ogTitle: "Kevin Kenfack",
-  ogDescription: "Je suis un developpeur FrontEnd et un jeune entrepreneur du Cameroun, je suis passionne par la creation de sites web beaux, intuitifs et réactifs.",
+  ogDescription: "Développeur et entrepreneur passionné, je conçois des sites web beaux, intuitifs et réactifs.",
   ogImage: "/og-image.jpg",
   twitterCard: "summary_large_image",
   ogSiteName: "Kevin Kenfack",
   ogType: "website",
   ogUrl: "https://kenfack-me.vercel.app/",
-  description:
-    "Je suis un développeur FrontEnd et un jeune entrepreneur du Cameroun, je suis passionné par la création de sites web beaux, intuitifs et réactifs.",
+  description: "Développeur et entrepreneur passionné, je conçois des sites web beaux, intuitifs et réactifs.",
 });
 </script>
+
+<style scoped>
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+</style>

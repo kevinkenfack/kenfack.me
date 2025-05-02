@@ -1,6 +1,6 @@
 <template>
   <main class="min-h-screen">
-    <AppHeader class="mb-12" title="Projets" :description="description" />
+    <AppHeader class="mb-12" title="Une vitrine pour mes projets open-source." :description="description" />
     <div class="space-y-4">
       <AppProjectCard
         v-for="(project, id) in projects"
