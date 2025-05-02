@@ -67,9 +67,8 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
     compatibilityDate: '2025-05-02',
-    prerender: {
-      crawlLinks: false,
-      routes: [] // Routes spécifiques à prérendre si nécessaire
+    routeRules: {
+      '/**': { prerender: false }
     }
   },
   build: {
