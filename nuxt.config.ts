@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  // Garder le SSR activé (c'est le comportement par défaut de Nuxt)
   devtools: { enabled: false },
   modules: [
     "@nuxt/ui",
@@ -63,5 +64,12 @@ export default defineNuxtConfig({
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
     },
+  },
+  build: {
+    transpile: ['@nuxt/ui']
+  },
+  // Configuration minimale pour empêcher le prérendu sans supprimer Nitro
+  routeRules: {
+    '/**': { prerender: false }
   }
 });
