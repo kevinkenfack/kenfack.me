@@ -37,7 +37,7 @@
     </div>
     <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
       <a 
-        href="/cv.pdf" 
+        href="/#" 
         download
         class="
           flex items-center justify-center gap-2 w-full
