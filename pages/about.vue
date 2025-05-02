@@ -8,7 +8,7 @@
             <NuxtImg
               src="/picture.jpg"
               alt="Kevin Kenfack"
-              class="w-full h-[400px] md:h-[200px] lg:h-[600px] rounded-2xl object-cover brightness-90"
+              class="w-full h-full md:h-full lg:h-full rounded-2xl object-cover brightness-90"
               placeholder
               format="webp"
             />
