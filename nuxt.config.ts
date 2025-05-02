@@ -63,20 +63,5 @@ export default defineNuxtConfig({
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
     },
-  },
-  nitro: {
-    preset: 'vercel',
-    compatibilityDate: '2025-05-02',
-    routeRules: {
-      '/**': { prerender: false }
-    }
-  },
-  build: {
-    transpile: ['@nuxt/ui']
-  },
-  experimental: {
-    payloadExtraction: false,
-    treeshakeClientOnly: true,
-    componentIslands: true
   }
 });
