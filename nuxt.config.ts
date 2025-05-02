@@ -60,9 +60,7 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: 'vercel',
-    minify: true,
-    compressPublicAssets: true
+    preset: 'vercel'
   },
   build: {
     transpile: ['@nuxt/ui']
