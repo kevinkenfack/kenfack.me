@@ -65,13 +65,13 @@ const jobs = [
     title: "Développeur Front-end",
     company: "Dotworld",
     period: "2023 - Présent",
-    logo: "/companies/1.png"
+    logo: "/companies/uiroom.png"
   },
   {
     title: "Fondateur & Développeur",
     company: "Uiroom",
     period: "2022 - Présent",
-    logo: "/companies/2.png"
+    logo: "/companies/dotworld.png"
   },
   {
     title: "Développeur Full-stack",

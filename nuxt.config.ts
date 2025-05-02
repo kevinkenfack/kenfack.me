@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt"
   ],
+  tailwindcss: {
+    configPath: '~/tailwind.config.ts',
+    exposeConfig: false,
+    viewer: true,
+  },
   css: [
     '~/assets/css/main.css'
   ],
@@ -60,7 +65,8 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: 'vercel'
+    preset: 'vercel',
+	compatibilityDate: '2025-05-02'
   },
   build: {
     transpile: ['@nuxt/ui']
