@@ -1,0 +1,18 @@
+{
+  "buildCommand": "nuxt build",
+  "devCommand": "nuxt dev",
+  "installCommand": "yarn install",
+  "framework": "nuxt",
+  "builds": [
+    {
+      "src": ".output/server/index.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+} 

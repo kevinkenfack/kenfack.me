@@ -59,4 +59,20 @@ export default defineNuxtConfig({
       Inter: [400, 500, 600, 700, 800, 900],
     },
   },
+  nitro: {
+    preset: 'vercel',
+    minify: true,
+    compressPublicAssets: true,
+    routeRules: {
+      '/**': { isr: false }
+    }
+  },
+  build: {
+    transpile: ['@nuxt/ui']
+  },
+  experimental: {
+    payloadExtraction: false,
+    treeshakeClientOnly: true,
+    componentIslands: true
+  }
 });
