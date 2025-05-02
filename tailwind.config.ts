@@ -10,6 +10,7 @@ module.exports = {
     "./app.vue",
     "./node_modules/@nuxt/ui/dist/**/*.{js,vue,ts,mjs}"
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       boxShadow: {
@@ -22,17 +23,18 @@ module.exports = {
       },
       colors: {
         primary: {
-          '50': '#f0f9ff',
-          '100': '#e0f2fe',
-          '200': '#bae6fd',
-          '300': '#7dd3fc',
-          '400': '#38bdf8',
-          '500': '#0ea5e9',
-          '600': '#0284c7',
-          '700': '#0369a1',
-          '800': '#075985',
-          '900': '#0c4a6e',
-          '950': '#082f49',
+          DEFAULT: '#0ea5e9', // Ajout de la couleur par défaut
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+          950: '#082f49',
         },
       },
       keyframes: {
@@ -91,11 +93,18 @@ module.exports = {
   ],
   safelist: [
     'outline-primary',
-    'bg-primary/40'
+    'after:bg-primary-500',
+    'bg-primary/40',
+    'bg-primary/50',
+    'bg-primary/60',
+    'bg-primary/70',
+    'bg-primary/80',
+    'bg-primary/90',
+    'selection:bg-primary/40'
   ],
   variants: {
     extend: {
-      backgroundColor: ['after', 'before'],
+      backgroundColor: ['after', 'before', 'selection'],
       outlineColor: ['focus-visible'],
     },
   },

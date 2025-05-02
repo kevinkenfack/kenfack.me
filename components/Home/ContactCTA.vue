@@ -19,7 +19,8 @@
       </p>
       <div class="flex flex-col sm:flex-row items-center gap-4">
         <NuxtLink
-          to="/contact"
+          to="https://wa.me/33744953416"
+          target="_blank"
           class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-md bg-gray-900 dark:bg-white px-6 py-3 text-base font-semibold text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors duration-200"
         >
           Me contacter

@@ -52,12 +52,12 @@
 
 <script setup>
 const config = useRuntimeConfig();
-const availabilityStatus = ref(config.public.availabilityStatus || 'unavailable');
+const availabilityStatus = ref(config.public.availabilityStatus || 'available');
 
 const availabilityText = computed(() => {
   switch (availabilityStatus.value) {
     case 'available':
-      return 'Disponible pour de nouvelles missions';
+      return 'Disponible pour des missions';
     case 'busy':
       return 'Occupé, mais contactez-moi';
     case 'unavailable':
