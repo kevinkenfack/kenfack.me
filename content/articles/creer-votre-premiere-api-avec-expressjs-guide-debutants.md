@@ -4,6 +4,7 @@ description: "Un guide convivial pour construire votre première API avec Expres
 published: 2025/02/2
 slug: "creer-votre-premiere-api-avec-expressjs-guide-debutants"
 image: "/articles/creer-votre-premiere-api-avec-expressjs-guide-debutants.png"
+readingTime: "5"
 ---
 
 > Cet article a été créé en utilisant ChatGPT et est destiné à servir de modèle

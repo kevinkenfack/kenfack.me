@@ -4,6 +4,7 @@ description: "Ce guide vous montre comment créer des API avec Next.js : configu
 published: 2025/03/27
 slug: "construit-des-api-avec-nextjs"
 image: "/articles/construit-des-api-avec-nextjs.png"
+readingTime: "10"
 ---
 
 ## 1. Premiers Pas
