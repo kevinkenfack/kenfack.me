@@ -60,14 +60,14 @@ useSeoMeta({
   description: article.value?.description,
   ogTitle: article.value?.title,
   ogDescription: article.value?.description,
-  ogImage: `${config.public.siteUrl}${config.public.ogImageBlogBasePath}/${slug}.png`,
+  ogImage: `${config.public.siteUrl}${article.value?.image}`,
   ogImageWidth: '1200',
   ogImageHeight: '630',
   ogImageAlt: article.value?.title,
   twitterCard: "summary_large_image",
   twitterTitle: article.value?.title,
   twitterDescription: article.value?.description,
-  twitterImage: `${config.public.siteUrl}${config.public.ogImageBlogBasePath}/${slug}.png`,
+  twitterImage: `${config.public.siteUrl}${article.value?.image}`,
   articleAuthor: "Kevin Kenfack",
   articlePublishedTime: article.value?.published,
   articleModifiedTime: article.value?.updated,
@@ -81,7 +81,7 @@ useSeoMeta({
 // Ajout des balises meta supplémentaires pour WhatsApp
 useHead({
   meta: [
-    { property: 'og:image:secure_url', content: `${config.public.siteUrl}${config.public.ogImageBlogBasePath}/${slug}.png` },
+    { property: 'og:image:secure_url', content: `${config.public.siteUrl}${article.value?.image}` },
     { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' }
@@ -98,7 +98,7 @@ useHead({
         '@type': 'BlogPosting',
         headline: article.value?.title,
         description: article.value?.description,
-        image: `${config.public.siteUrl}${config.public.ogImageBlogBasePath}/${slug}.png`,
+        image: `${config.public.siteUrl}${article.value?.image}`,
         author: {
           '@type': 'Person',
           name: 'Kevin Kenfack',
