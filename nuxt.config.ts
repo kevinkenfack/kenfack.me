@@ -19,6 +19,17 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css'
   ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+      ...(process.env.NODE_ENV === 'production' ? {
+        cssnano: {
+          preset: ['default', { discardComments: { removeAll: true } }]
+        }
+      } : {})
+    },
+  },
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kenfack-me.vercel.app/',
