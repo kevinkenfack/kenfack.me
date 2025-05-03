@@ -17,7 +17,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kenfack-me.vercel.app/',
-      ogImageBlogBasePath: process.env.NUXT_PUBLIC_OG_IMAGE_BLOG_BASE_PATH || '/blogs',
       availabilityStatus: process.env.NUXT_PUBLIC_AVAILABILITY_STATUS || 'unavailable'
     }
   },
