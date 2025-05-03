@@ -56,7 +56,7 @@ const { data: recommendedArticles } = await useAsyncData("recommended-articles",
 
 // Métadonnées SEO
 useSeoMeta({
-  title: `${article.value?.title} | Kevin Kenfack`,
+  title: `${article.value?.title}`,
   description: article.value?.description,
   ogTitle: article.value?.title,
   ogDescription: article.value?.description,

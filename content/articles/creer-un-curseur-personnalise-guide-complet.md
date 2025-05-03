@@ -3,7 +3,7 @@ title: "Créer un Curseur Personnalisé Guide Complet pour les Développeurs Web
 description: "Apprenez à concevoir un curseur unique et interactif pour votre site web"
 published: 2025/03/26
 slug: "creer-un-curseur-personnalise"
-image: "/articles/creer-un-curseur-personnalise.png"
+image: "/blogs/creer-un-curseur-personnalise.png"
 ---
 
 > Cet article a été créé pour vous guider à travers le processus de création d'un curseur web personnalisé
