@@ -1,6 +1,6 @@
 <template>
-  <NuxtLink :to="article._path" class="group h-full">
-    <article class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-4 transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#080808] h-full flex flex-col">
+  <NuxtLink :to="article._path" class="group">
+    <article class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-4 transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#080808]">
       <NuxtImg
         v-if="article.image"
         :src="article.image"
@@ -33,9 +33,6 @@
       <p class="relative z-10 mt-2 text-sm text-gray-600 dark:text-gray-400">
         {{ article.description }}
       </p>
-      <div class="relative z-10 mt-2 flex items-center text-sm text-gray-600 dark:text-gray-500">
-        {{ article.readingTime }} min de lecture
-      </div>
     </article>
   </NuxtLink>
 </template>

@@ -82,20 +82,8 @@ export default defineNuxtConfig({
       routes: [], // désactive le rendu de pages à build time
     },
   },
-  // Configuration pour la gestion des erreurs
-  routeRules: {
-    '/**': { 
-      prerender: false,
-      ssr: true
-    }
-  },
-  hooks: {
-    'pages:extend' (pages) {
-      // Supprimer la route catch-all par défaut
-      const index = pages.findIndex(page => page.path === '/:pathMatch(.*)*')
-      if (index > -1) {
-        pages.splice(index, 1)
-      }
-    }
-  }
+   // Configuration minimale pour empêcher le prérendu sans supprimer Nitro
+  //  routeRules: {
+ // '/**': { prerender: false }
+// //}
 });

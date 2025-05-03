@@ -4,7 +4,6 @@ description: "Apprenez à concevoir un curseur unique et interactif pour votre s
 published: 2025/03/26
 slug: "creer-un-curseur-personnalise"
 image: "/articles/creer-un-curseur-personnalise.png"
-readingTime: "15"
 ---
 
 > Cet article a été créé pour vous guider à travers le processus de création d'un curseur web personnalisé

@@ -4,7 +4,6 @@ description: "Exploration exhaustive des techniques de positionnement CSS pour d
 published: 2025/03/26
 slug: "guide-definitif-positionnement-css"
 image: "/articles/guide-definitif-positionnement-css.png"
-readingTime: "5"
 ---
 
 > Un guide complet qui démystifie tous les aspects du positionnement en CSS, de la théorie à la pratique avancée
