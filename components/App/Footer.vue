@@ -23,6 +23,6 @@
       </ULink>
     </nav>
     <br>
-    <p>© 2025 Kevin Kenfack. All rights reserved.</p>
+    <p><span class="text-primary-400 dark:text-primary-400">© 2025</span> Kevin Kenfack. All rights reserved.</p>
   </footer>
 </template>
