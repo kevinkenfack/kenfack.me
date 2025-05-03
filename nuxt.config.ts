@@ -11,11 +11,6 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt"
   ],
-  tailwindcss: {
-    configPath: '~/tailwind.config.ts',
-    exposeConfig: false,
-    viewer: true,
-  },
   css: [
     '~/assets/css/main.css'
   ],
@@ -34,6 +29,19 @@ export default defineNuxtConfig({
     icons: ["heroicons", "lucide"],
     global: true,
     safelistColors: ['primary']
+  },
+  postcss: {
+    plugins: {
+      // tailwindcss: {},
+      autoprefixer: {},
+      ...(process.env.NODE_ENV === 'production'
+        ? {
+            cssnano: {
+              preset: ['default', { discardComments: { removeAll: true } }],
+            },
+          }
+        : {}),
+    },
   },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
@@ -68,8 +76,14 @@ export default defineNuxtConfig({
   build: {
     transpile: ['@nuxt/ui']
   },
-  // Configuration minimale pour empêcher le prérendu sans supprimer Nitro
-  routeRules: {
-    '/**': { prerender: false }
-  }
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: [], // désactive le rendu de pages à build time
+    },
+  },
+   // Configuration minimale pour empêcher le prérendu sans supprimer Nitro
+  //  routeRules: {
+ // '/**': { prerender: false }
+// //}
 });
