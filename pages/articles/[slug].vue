@@ -61,6 +61,9 @@ useSeoMeta({
   ogTitle: article.value?.title,
   ogDescription: article.value?.description,
   ogImage: `${config.public.siteUrl}${config.public.ogImageBlogBasePath}/${slug}.png`,
+  ogImageWidth: '1200',
+  ogImageHeight: '630',
+  ogImageAlt: article.value?.title,
   twitterCard: "summary_large_image",
   twitterTitle: article.value?.title,
   twitterDescription: article.value?.description,
@@ -73,6 +76,16 @@ useSeoMeta({
   ogType: "article",
   ogSiteName: "Kevin Kenfack",
   ogUrl: `${config.public.siteUrl}/articles/${slug}`,
+});
+
+// Ajout des balises meta supplémentaires pour WhatsApp
+useHead({
+  meta: [
+    { property: 'og:image:secure_url', content: `${config.public.siteUrl}${config.public.ogImageBlogBasePath}/${slug}.png` },
+    { property: 'og:image:type', content: 'image/png' },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' }
+  ]
 });
 
 // Schema.org pour les articles
