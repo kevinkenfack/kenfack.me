@@ -21,8 +21,12 @@
     "@nuxtjs/google-fonts": "3.1.1",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
     "nuxt": "^3.17.1",
     "nuxt-icon": "0.6.7",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.9",
     "yarn-upgrade-all": "^0.7.2"
