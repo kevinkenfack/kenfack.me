@@ -1,22 +1,21 @@
 <template>
   <main class="min-h-screen">
-    <div class="max-w-2xl mx-auto px-4 py-8">
+    <div class="w-full max-w-6xl mx-auto px-0 sm:px-4 py-4">
       <div class="mb-12">
-        <div class="relative group">
+        <div class="relative group w-full">
           <div class="absolute -inset-0.5 rounded-2xl animate-rotate-gradient"></div>
           <div class="relative">
             <NuxtImg
               src="/picture.jpg"
               alt="Kevin Kenfack"
-              class="w-full h-full md:h-full lg:h-full rounded-2xl object-cover brightness-90"
+              class="w-full h-full md:h-full lg:h-full rounded-2xl object-cover brightness-75"
               placeholder
               format="webp"
             />
           </div>
         </div>
-        <div class="mt-4 text-center">
-          <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2">Kevin Kenfack</h1>
-          <p class="text-gray-600 dark:text-gray-400">Développeur à Douala, Cameroun</p>
+        <div class="mt-8">
+          <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-gray-200">Je m'appelle Kevin Kenfack je suis un développeur passionné.</h1>
         </div>
       </div>
 
@@ -25,19 +24,27 @@
           <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
             Mon parcours
           </h2>
-          <p class="text-gray-600 dark:text-gray-400">
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
             Je suis actuellement développeur chez Dotworld, où je suis responsable de la création et de l'optimisation des interfaces utilisateur pour nos applications web, dans le but de délivrer une expérience utilisateur remarquable.
+          </p>
+
+          <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
+            Partage & Connexion
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Je partage régulièrement mon travail sur X, LinkedIn, Threads et GitHub. Je suis toujours à la recherche de nouvelles façons de me connecter avec d'autres développeurs et designers, n'hésitez pas à me contacter pour discuter !
+          </p>
+
+          <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
+            Passion & Créativité
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400">
+            Je suis passionné par la photographie et j'aime capturer le monde qui m'entoure. Je cherche constamment de nouvelles façons d'exprimer ma créativité et de partager ma perspective avec les autres.
           </p>
         </div>
 
         <div class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300">
-          <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
-            Partage & Connexion
-          </h2>
-          <p class="text-gray-600 dark:text-gray-400">
-            Je partage régulièrement mon travail sur X, LinkedIn, Threads et GitHub. Je suis toujours à la recherche de nouvelles façons de me connecter avec d'autres développeurs et designers, n'hésitez pas à me contacter pour discuter !
-          </p>
-          <div class="flex gap-4 mt-4">
+          <div class="flex gap-4 justify-center">
             <a 
               href="https://twitter.com/yourusername" 
               target="_blank"
@@ -68,26 +75,77 @@
           </div>
         </div>
 
-        <div class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300">
-          <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
-            Passion & Créativité
-          </h2>
-          <p class="text-gray-600 dark:text-gray-400">
-            Je suis passionné par la photographie et j'aime capturer le monde qui m'entoure. Je cherche constamment de nouvelles façons d'exprimer ma créativité et de partager ma perspective avec les autres.
-          </p>
-        </div>
+        <ContactCTA />
       </div>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
+import ContactCTA from '~/components/Home/ContactCTA.vue';
+
+const config = useRuntimeConfig();
+const description = "Développeur web basé à Douala, Cameroun. Spécialisé dans la création d'interfaces utilisateur modernes et performantes.";
+
 definePageMeta({
   layout: 'default'
-})
+});
 
 useSeoMeta({
   title: "À propos | Kevin Kenfack",
-  description: "Développeur web basé à Douala, Cameroun. Spécialisé dans la création d'interfaces utilisateur modernes et performantes.",
+  description,
+  ogTitle: "À propos | Kevin Kenfack",
+  ogDescription: description,
+  ogImage: `${config.public.siteUrl}/og-image.jpg`,
+  twitterCard: "summary_large_image",
+  twitterTitle: "À propos | Kevin Kenfack",
+  twitterDescription: description,
+  twitterImage: `${config.public.siteUrl}/og-image.jpg`,
+  ogSiteName: "Kevin Kenfack",
+  ogType: "profile",
+  ogUrl: `${config.public.siteUrl}/about`,
+  profileFirstName: "Kevin",
+  profileLastName: "Kenfack",
+  profileUsername: "Kevin Kenfack",
+  profileGender: "male"
+});
+
+// Schema.org pour la page À propos
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Kevin Kenfack',
+        description: description,
+        image: `${config.public.siteUrl}/picture.jpg`,
+        url: `${config.public.siteUrl}/about`,
+        sameAs: [
+          'https://twitter.com/yourusername',
+          'https://linkedin.com/in/yourusername',
+          'https://github.com/yourusername'
+        ],
+        jobTitle: 'Développeur Web',
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Dotworld',
+          url: 'https://www.dotworld.ch/'
+        },
+        homeLocation: {
+          '@type': 'Place',
+          name: 'Douala, Cameroun'
+        },
+        knowsAbout: [
+          'Développement Web',
+          'Interfaces Utilisateur',
+          'React',
+          'Next.js',
+          'Node.js'
+        ]
+      })
+    }
+  ]
 });
 </script> 

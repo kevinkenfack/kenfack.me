@@ -25,11 +25,15 @@
             format="webp"
           />
           <div class="flex-1">
-            <h3 class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-400 transition-colors duration-300">
-              {{ job.title }}
-            </h3>
+            <a 
+              :href="job.website" 
+              target="_blank"
+              class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-400 transition-colors duration-300"
+            >
+              {{ job.company }}
+            </a>
             <p class="text-xs text-gray-500 dark:text-gray-400">
-              {{ job.company }} • {{ job.period }}
+              {{ job.title }} • {{ job.period }}
             </p>
           </div>
         </div>
@@ -62,22 +66,25 @@
 <script lang="ts" setup>
 const jobs = [
   {
-    title: "Développeur Front-end",
+    title: "Dev Frontend",
     company: "Dotworld",
     period: "2023 - Présent",
-    logo: "/companies/uiroom.png"
+    logo: "/companies/dotworld.png",
+    website: "https://www.dotworld.ch/"
   },
   {
-    title: "Fondateur & Développeur",
+    title: "Développeur",
     company: "Uiroom",
     period: "2022 - Présent",
-    logo: "/companies/dotworld.png"
+    logo: "/companies/uiroom.png",
+    website: "https://uiroom.pro/"
   },
   {
-    title: "Développeur Full-stack",
+    title: "Dev Full-stack",
     company: "Freelance",
     period: "2021 - 2022",
-    logo: "/companies/3.png"
+    logo: "/companies/3.png",
+    website: "#"
   }
 ];
 </script> 

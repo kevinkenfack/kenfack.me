@@ -34,17 +34,47 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
 const description =
   "Quelques expériences aléatoires que je fais pendant mon temps libre.";
+
 useSeoMeta({
   title: "Laboratoire | Kevin Kenfack",
   description,
+  ogTitle: "Laboratoire | Kevin Kenfack",
   ogDescription: description,
-  ogTitle: "Laboratoire",
-  ogImage: "/og-image.jpg",
+  ogImage: `${config.public.siteUrl}/og-image.jpg`,
   twitterCard: "summary_large_image",
+  twitterTitle: "Laboratoire | Kevin Kenfack",
+  twitterDescription: description,
+  twitterImage: `${config.public.siteUrl}/og-image.jpg`,
   ogSiteName: "Kevin Kenfack",
   ogType: "website",
-  ogUrl: "https://kenfack-me.vercel.app/lab",
+  ogUrl: `${config.public.siteUrl}/lab`,
+});
+
+// Schema.org pour la page Laboratoire
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Laboratoire',
+        description: description,
+        url: `${config.public.siteUrl}/lab`,
+        publisher: {
+          '@type': 'Person',
+          name: 'Kevin Kenfack',
+          url: config.public.siteUrl
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `${config.public.siteUrl}/lab`
+        }
+      })
+    }
+  ]
 });
 </script>

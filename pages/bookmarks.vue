@@ -30,12 +30,53 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
 const description =
   "Des choses géniales que j'ai trouvées sur internet. Cette page est encore WIP, je veux ajouter des recherches comme bmrks.com";
+
 useSeoMeta({
   title: "Favoris | Kevin Kenfack",
   description,
+  ogTitle: "Favoris | Kevin Kenfack",
   ogDescription: description,
+  ogImage: `${config.public.siteUrl}/og-image.jpg`,
+  twitterCard: "summary_large_image",
+  twitterTitle: "Favoris | Kevin Kenfack",
+  twitterDescription: description,
+  twitterImage: `${config.public.siteUrl}/og-image.jpg`,
+  ogSiteName: "Kevin Kenfack",
+  ogType: "website",
+  ogUrl: `${config.public.siteUrl}/bookmarks`,
+});
+
+// Schema.org pour la page Favoris
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Favoris',
+        description: description,
+        url: `${config.public.siteUrl}/bookmarks`,
+        publisher: {
+          '@type': 'Person',
+          name: 'Kevin Kenfack',
+          url: config.public.siteUrl
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `${config.public.siteUrl}/bookmarks`
+        },
+        about: {
+          '@type': 'Thing',
+          name: 'Ressources Web',
+          description: 'Collection de ressources web utiles pour le développement et le design'
+        }
+      })
+    }
+  ]
 });
 
 const bookmarks = [

@@ -61,22 +61,69 @@ const availabilityText = computed(() => {
     case 'busy':
       return 'Occupé, mais contactez-moi';
     case 'unavailable':
-      return 'Non disponible pour le moment';
+      return 'Indisponible pour le moment';
     default:
-      return 'Non disponible pour le moment';
+      return 'Indisponible pour le moment';
   }
 });
 
+const description = "Développeur et entrepreneur passionné, je conçois des sites web beaux, intuitifs et réactifs.";
+
 useSeoMeta({
   title: "Kevin Kenfack",
+  description,
   ogTitle: "Kevin Kenfack",
-  ogDescription: "Développeur et entrepreneur passionné, je conçois des sites web beaux, intuitifs et réactifs.",
-  ogImage: "/og-image.jpg",
+  ogDescription: description,
+  ogImage: `${config.public.siteUrl}/og-image.jpg`,
   twitterCard: "summary_large_image",
+  twitterTitle: "Kevin Kenfack",
+  twitterDescription: description,
+  twitterImage: `${config.public.siteUrl}/og-image.jpg`,
   ogSiteName: "Kevin Kenfack",
   ogType: "website",
-  ogUrl: "https://kenfack-me.vercel.app/",
-  description: "Développeur et entrepreneur passionné, je conçois des sites web beaux, intuitifs et réactifs.",
+  ogUrl: config.public.siteUrl,
+});
+
+// Schema.org pour la page d'accueil
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Kevin Kenfack',
+        alternateName: 'Joël',
+        description: description,
+        image: `${config.public.siteUrl}/picture.jpg`,
+        url: config.public.siteUrl,
+        sameAs: [
+          'https://www.dotworld.ch/',
+          'https://uiroom.pro/'
+        ],
+        jobTitle: 'Développeur Front-end',
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Dotworld',
+          url: 'https://www.dotworld.ch/'
+        },
+        knowsAbout: [
+          'JavaScript',
+          'TypeScript',
+          'React',
+          'Next.js',
+          'Node.js',
+          'Développement Web',
+          'Interfaces Utilisateur'
+        ],
+        alumniOf: {
+          '@type': 'Organization',
+          name: 'Uiroom',
+          url: 'https://uiroom.pro/'
+        }
+      })
+    }
+  ]
 });
 </script>
 
