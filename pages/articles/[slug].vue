@@ -20,6 +20,56 @@
             format="webp"
           />
 
+          <!-- Table des matières -->
+          <div class="mb-8">
+            <button 
+              @click="isTocOpen = !isTocOpen"
+              class="
+                flex items-center justify-between w-full
+                px-4 py-2
+                text-sm font-medium
+                text-primary-600 dark:text-primary-400
+                bg-primary-50 dark:bg-primary-900/20
+                rounded-lg
+                hover:bg-primary-100 dark:hover:bg-primary-900/30
+                transition-colors duration-300
+              "
+            >
+              <span>Table des matières</span>
+              <svg 
+                class="w-4 h-4 transform transition-transform duration-300" 
+                :class="{ 'rotate-180': isTocOpen }"
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            <div 
+              v-if="isTocOpen"
+              class="mt-2 p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg"
+            >
+              <nav class="space-y-2">
+                <a 
+                  v-for="heading in doc.body.toc.links" 
+                  :key="heading.id"
+                  :href="`#${heading.id}`"
+                  class="
+                    block text-sm
+                    text-primary-600 dark:text-primary-400
+                    hover:text-primary-700 dark:hover:text-primary-300
+                    transition-colors duration-300
+                  "
+                  :class="{ 'ml-4': heading.depth > 2 }"
+                >
+                  {{ heading.text }}
+                </a>
+              </nav>
+            </div>
+          </div>
+
           <ContentRenderer :value="doc" />
         </article>
       </ContentDoc>
@@ -39,10 +89,12 @@
 const config = useRuntimeConfig()
 const route = useRoute();
 const { slug } = route.params;
+const isTocOpen = ref(false);
 
-// Récupérer l'article actuel
+// Récupérer l'article actuel avec la table des matières
 const { data: article } = await useAsyncData(`article-${slug}`, () =>
-  queryContent(`/articles/${slug}`).findOne()
+  queryContent(`/articles/${slug}`)
+    .findOne()
 );
 
 // Récupérer les articles recommandés
@@ -121,9 +173,25 @@ useHead({
 });
 </script>
 
-<style>
+<style lang="postcss">
 .prose h2 a,
 .prose h3 a {
   @apply no-underline;
+}
+
+/* Style par défaut pour les liens */
+.prose a {
+  @apply transition-colors;
+}
+
+/* Style spécifique pour les liens externes avec un format particulier */
+.prose a[href^="http"],
+.prose a[href^="https"] {
+  @apply text-primary-400 no-underline;
+}
+
+.prose a[href^="http"]:hover,
+.prose a[href^="https"]:hover {
+  @apply text-primary-500 underline;
 }
 </style>

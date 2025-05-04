@@ -1,9 +1,9 @@
 ---
 title: "Créer Votre Première API avec Express.js : Guide pour Débutants"
 description: "Un guide convivial pour construire votre première API avec Express.js"
-published: 2025/02/2
+published: 2025/02/02
 slug: "creer-votre-premiere-api-avec-expressjs-guide-debutants"
-image: "/blogs/creer-votre-premiere-api-avec-expressjs-guide-debutants.png"
+image: "/blogs/opengraph.jpg"
 ---
 
 > Cet article a été créé en utilisant ChatGPT et est destiné à servir de modèle

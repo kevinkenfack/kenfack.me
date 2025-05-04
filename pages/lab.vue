@@ -13,15 +13,7 @@
           <div
             class="group p-6 bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#080808]"
           >
-            <h2
-              class="text-lg font-semibold font-display tracking-tight text-gray-800 dark:text-gray-300 group-hover:text-primary-400 transition-colors duration-300"
-            >
-              {{ data.title }}
-            </h2>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-              {{ data.description || "Aucune description disponible." }}
-            </p>
-            <div class="mt-4">
+            <div class="[&>div>h1:first-child]:mt-0 [&>div>p:first-child]:mt-0">
               <ContentRenderer>
                 <ContentRendererMarkdown :value="data" />
               </ContentRenderer>

@@ -4,7 +4,7 @@
     dark:bg-[radial-gradient(rgba(255,255,255,0.10)_1px,transparent_1px)] 
     bg-[size:22px_22px] bg-repeat bg-fixed">
     
-    <NuxtLoadingIndicator color="#38bdf8" />
+    <NuxtLoadingIndicator color="#10b981" />
     <AppNavbar />
     <div class="h-32"></div>
     <UContainer>

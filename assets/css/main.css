@@ -10,13 +10,13 @@
 
 @layer components {
   .bg-primary\/40 {
-    background-color: rgb(14 165 233 / 0.4);
+    background-color: rgb(16 185 129 / 0.4);
   }
 }
 
 @layer utilities {
   .animate-rotate-gradient {
-    background: linear-gradient(var(--gradient-angle), rgb(255, 255, 255), rgb(0, 0, 0));
+    background: linear-gradient(var(--gradient-angle), rgb(16, 185, 129), rgb(0, 0, 0));
     animation: rotate-gradient 3s linear infinite;
   }
 }
