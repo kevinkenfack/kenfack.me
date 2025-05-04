@@ -44,9 +44,19 @@
         </div>
 
         <div class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300">
+          <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
+            Technologies
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Voici les technologies que j'utilise au quotidien pour créer des applications web modernes et performantes.
+          </p>
+          <TechStack />
+        </div>
+
+        <div class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300">
           <div class="flex gap-4 justify-center">
             <a 
-              href="https://twitter.com/yourusername" 
+              href="https://x.com/kenfackdev" 
               target="_blank"
               class="text-gray-500 hover:text-primary-400 dark:text-gray-400 dark:hover:text-primary-400 transition-colors duration-300"
             >
@@ -55,7 +65,7 @@
               </svg>
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/kevinkenfack" 
               target="_blank"
               class="text-gray-500 hover:text-primary-400 dark:text-gray-400 dark:hover:text-primary-400 transition-colors duration-300"
             >
@@ -64,7 +74,7 @@
               </svg>
             </a>
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/kevinkenfack" 
               target="_blank"
               class="text-gray-500 hover:text-primary-400 dark:text-gray-400 dark:hover:text-primary-400 transition-colors duration-300"
             >
@@ -83,6 +93,7 @@
 
 <script setup lang="ts">
 import ContactCTA from '~/components/Home/ContactCTA.vue';
+import TechStack from '~/components/App/TechStack.vue';
 
 const config = useRuntimeConfig();
 const description = "Développeur web basé à Douala, Cameroun. Spécialisé dans la création d'interfaces utilisateur modernes et performantes.";
