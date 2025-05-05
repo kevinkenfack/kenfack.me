@@ -3,7 +3,8 @@ title: "F*ck Clean Code, Vous Avez Besoin d'une Idée"
 description: "Articles et tutoriels sur les technologies serverless d'Upstash et de la communauté"
 published: 2025/05/03
 slug: "codage-vibratoire"
-image: "/blogs/opengraph.jpg"
+thumbnail: "/blogs/thumbnail.jpg"
+opengraph: "/blogs/og-image.jpg"
 ---
 
 Il existe une philosophie de développement logiciel qui correspond parfaitement à ma compréhension de la livraison rapide d'idées. Je l'ai vue fonctionner encore et encore au cours de l'année écoulée.

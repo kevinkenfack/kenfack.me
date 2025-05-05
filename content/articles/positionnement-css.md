@@ -3,7 +3,8 @@ title: "Positionnement CSS le Guide Professionnel et Approfondi"
 description: "Exploration exhaustive des techniques de positionnement CSS pour des mises en page professionnelles et responsives"
 published: 2025/03/26
 slug: "positionnement-css"
-image: "/blogs/opengraph.jpg"
+thumbnail: "/blogs/thumbnail.jpg"
+opengraph: "/blogs/og-image.jpg"
 ---
 
 > Un guide complet qui démystifie tous les aspects du positionnement en CSS, de la théorie à la pratique avancée

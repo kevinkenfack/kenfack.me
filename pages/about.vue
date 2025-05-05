@@ -99,13 +99,13 @@ const config = useRuntimeConfig();
 const description = "Développeur web basé à Douala, Cameroun. Spécialisé dans la création d'interfaces utilisateur modernes et performantes.";
 
 useSeoMeta({
-  title: "À propos | Kevin Kenfack",
+  title: "À propos - Kevin Kenfack",
   description,
-  ogTitle: "À propos | Kevin Kenfack",
+  ogTitle: "À propos - Kevin Kenfack",
   ogDescription: description,
   ogImage: `${config.public.siteUrl}/og-image.jpg`,
   twitterCard: "summary_large_image",
-  twitterTitle: "À propos | Kevin Kenfack",
+  twitterTitle: "À propos - Kevin Kenfack",
   twitterDescription: description,
   twitterImage: `${config.public.siteUrl}/og-image.jpg`,
   ogSiteName: "Kevin Kenfack",
@@ -130,9 +130,9 @@ useHead({
         image: `${config.public.siteUrl}/picture.jpg`,
         url: `${config.public.siteUrl}/about`,
         sameAs: [
-          'https://twitter.com/yourusername',
-          'https://linkedin.com/in/yourusername',
-          'https://github.com/yourusername'
+          'https://twitter.com/kenfackdev',
+          'https://linkedin.com/in/kevinkenfackjoel',
+          'https://github.com/kevinkenfack'
         ],
         jobTitle: 'Développeur Web',
         worksFor: {
@@ -142,7 +142,7 @@ useHead({
         },
         homeLocation: {
           '@type': 'Place',
-          name: 'Douala, Cameroun'
+          name: 'Yaounde, Cameroun'
         },
         knowsAbout: [
           'Développement Web',

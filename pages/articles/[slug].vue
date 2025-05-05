@@ -10,8 +10,8 @@
           </h1>
 
           <NuxtImg
-            v-if="doc.image"
-            :src="doc.image"
+            v-if="doc.thumbnail"
+            :src="doc.thumbnail"
             :alt="doc.title"
             class="w-full aspect-square object-cover rounded-2xl mb-6"
             :placeholder="[50, 30]"
@@ -112,14 +112,16 @@ useSeoMeta({
   description: article.value?.description,
   ogTitle: article.value?.title,
   ogDescription: article.value?.description,
-  ogImage: `${config.public.siteUrl}${article.value?.image}`,
+  ogImage: `${config.public.siteUrl}${article.value?.opengraph}`,
   ogImageWidth: '1200',
   ogImageHeight: '630',
   ogImageAlt: article.value?.title,
   twitterCard: "summary_large_image",
   twitterTitle: article.value?.title,
   twitterDescription: article.value?.description,
-  twitterImage: `${config.public.siteUrl}${article.value?.image}`,
+  twitterImage: `${config.public.siteUrl}${article.value?.opengraph}`,
+  twitterImageAlt: article.value?.title,
+  twitterSite: config.public.siteUrl,
   articleAuthor: "Kevin Kenfack",
   articlePublishedTime: article.value?.published,
   articleModifiedTime: article.value?.updated,
