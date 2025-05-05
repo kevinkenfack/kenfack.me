@@ -1,0 +1,9 @@
+{
+    "name": "Snippy",
+    "url": "https://snippy-jet.vercel.app/",
+    "description": "Snippy est un outil qui permet de créer des snippets de code.",
+    "thumbnail": "/projects/snippy.svg",
+    "status": "Active",
+    "opensource": true
+  }
+  

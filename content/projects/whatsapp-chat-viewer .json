@@ -1,0 +1,9 @@
+{
+    "name": "Whatsapp Chat Viewer",
+    "url": "https://whatsapp-chat-views.vercel.app/",
+    "description": "Un outil qui permet de visualiser les messages exporter depuis WhatsApp.",
+    "thumbnail": "",
+    "status": "Active",
+    "opensource": true
+  }
+  

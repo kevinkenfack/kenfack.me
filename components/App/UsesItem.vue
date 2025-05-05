@@ -6,14 +6,25 @@
       target="_blank"
       external
     >
-      <p
-        class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-300 group-hover:text-primary-400 transition-colors duration-300"
-      >
-        {{ item.name }}
-      </p>
-      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-        {{ item.description }}
-      </p>
+      <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+        <div v-if="item.image" class="flex-shrink-0 self-start sm:self-center">
+          <img 
+            :src="item.image" 
+            :alt="item.name"
+            class="w-12 h-12 object-cover rounded-lg border border-gray-200 dark:border-[#1a1a1a]"
+          />
+        </div>
+        <div class="flex-grow min-w-0">
+          <p
+            class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-300 group-hover:text-primary-400 transition-colors duration-300 truncate"
+          >
+            {{ item.name }}
+          </p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-2">
+            {{ item.description }}
+          </p>
+        </div>
+      </div>
     </NuxtLink>
   </li>
 </template>

@@ -130,16 +130,6 @@ useSeoMeta({
   ogUrl: `${config.public.siteUrl}/articles/${slug}`,
 });
 
-// Ajout des balises meta supplémentaires pour WhatsApp
-useHead({
-  meta: [
-    { property: 'og:image:secure_url', content: `${config.public.siteUrl}${article.value?.image}` },
-    { property: 'og:image:type', content: 'image/png' },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' }
-  ]
-});
-
 // Schema.org pour les articles
 useHead({
   script: [

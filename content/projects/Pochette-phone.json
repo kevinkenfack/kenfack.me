@@ -1,0 +1,9 @@
+{
+    "name": "Pochette-phone",
+    "url": "https://pochettes-phone.vercel.app/",
+    "description": "Pochette-phone est un outil e-commerce qui permet de créer des pochettes de téléphone.",
+    "thumbnail": "/projects/pochette-phone.ico",
+    "status": "Active",
+    "opensource": true
+  }
+  

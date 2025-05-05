@@ -2,5 +2,6 @@
   "name": "Bear",
   "description": "L'absence de mise en évidence du code et de support du markdown dans les notes Apple m'a fait passer à Bear et je ne reviens pas en arrière.",
   "url": "https://bear.app/",
-  "category": "software"
+  "category": "software",
+  "image": "https://bear.app/images/logo.png"
 }

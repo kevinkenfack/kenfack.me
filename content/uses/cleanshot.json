@@ -1,6 +1,7 @@
 {
-  "name": "Cleanshot",
-  "description": "Vous vous demandez peut-être pourquoi je paierais pour un outil de capture d'écran. Eh bien, il ne s'agit pas seulement d'un outil de capture d'écran. Il s'agit d'un ensemble complet d'outils que vous pouvez utiliser pour faire des captures d'écran, enregistrer votre écran, annoter vos captures d'écran, et bien plus encore. Il vaut la peine d'être utilisé.",
-  "url": "https://cleanshot.com/",
-  "category": "software"
+  "name": "Screen Studio",
+  "description": "Screen Studio est un outil d'enregistrement d'écran conçu pour les développeurs et les créateurs de contenu. Il permet de créer des vidéos de haute qualité avec des fonctionnalités comme le zoom automatique, le suivi du curseur et l'édition simplifiée. C'est mon outil préféré pour créer des tutoriels et des démos.",
+  "url": "https://screen.studio/",
+  "category": "software",
+  "image": "https://screen.studio/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-transparent.681d19be.png&w=256&q=75"
 }
