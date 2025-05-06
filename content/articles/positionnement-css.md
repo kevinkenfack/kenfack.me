@@ -1,5 +1,5 @@
 ---
-title: "Positionnement CSS le Guide Professionnel et Approfondi"
+title: "Positionnement CSS le Guide Professionnel et Approfondi."
 description: "Exploration exhaustive des techniques de positionnement CSS pour des mises en page professionnelles et responsives"
 published: 2025/03/26
 slug: "positionnement-css"

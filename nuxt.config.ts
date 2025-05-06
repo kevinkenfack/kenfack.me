@@ -12,6 +12,9 @@ export default defineNuxtConfig({
    "@vueuse/nuxt",
    "nuxt-og-image"
   ],
+  tailwindcss: {
+    configPath: 'tailwind.config.ts',
+  },
   css: [
     '~/assets/css/main.css'
   ],

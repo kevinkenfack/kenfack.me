@@ -78,7 +78,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
           </div>
           
           <!-- Titre -->
-          <h1 style="color: white; font-size: 60px; line-height: 1.2; margin: 0 0 24px 0; font-weight: 700;">
+          <h1 style="color: white; font-size: 70px; line-height: 1.2; margin: 0 0 24px 0; font-weight: 700;">
             {{ title }}
           </h1>
           
@@ -90,7 +90,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
         </div>
         
         <!-- Zone de profil (côté droit) -->
-        <div style="flex: 1; background-color: rgba(16, 185, 129, 0.05); display: flex; flex-direction: column; align-items: center; justify-content: center; border-left: 1px solid rgba(16, 185, 129, 0.2);">
+        <div style="flex: 1; background-color:#34d399; display: flex; flex-direction: column; align-items: center; justify-content: center; border-left: 1px solid rgba(16, 185, 129, 0.2);">
           <!-- Photo de profil 
           <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #10b981; margin-bottom: 20px;">
             <img src="/picture.jpg" alt="Kevin Kenfack" style="width: 100%; height: 100%; object-fit: cover;" />

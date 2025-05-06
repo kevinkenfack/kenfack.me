@@ -1,5 +1,5 @@
 ---
-title: "F*ck Clean Code, Vous Avez Besoin d'une Idée"
+title: "F*ck Clean Code, Vous Avez Besoin d'une Idée."
 description: "Articles et tutoriels sur les technologies serverless d'Upstash et de la communauté"
 published: 2025/05/03
 slug: "codage-vibratoire"
