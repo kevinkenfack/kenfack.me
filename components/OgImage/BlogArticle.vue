@@ -14,22 +14,12 @@
       
       <!-- Contenu principal -->
       <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; margin-left: 48px;">
-        <!-- Logo et date -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
-          <div style="font-size: 24px; font-weight: 700; color: white;">
-            <span style="color: #34d399;">Kevin</span><span style="color: white;">Kenfack</span>
-          </div>
-          <div v-if="date" style="color: #d1d5db; font-size: 18px;">{{ formatDate(date) }}</div>
-        </div>
         
         <!-- Titre et description -->
         <div style="margin-top: auto; margin-bottom: auto;">
           <h1 style="font-size: 70px; font-weight: 900; color: white; line-height: 1.1; margin-bottom: 24px;">
             {{ title }}
           </h1>
-          <p v-if="description" style="font-size: 30px; color: #d1d5db; margin-top: 24px; max-width: 800px;">
-            {{ description }}
-          </p>
         </div>
         
         <!-- Tags et URL -->
@@ -43,9 +33,6 @@
               #{{ tag }}
             </span>
           </div>
-          <p style="font-size: 20px; color: #d1d5db;">
-            kenfack.me
-          </p>
         </div>
       </div>
     </div>
@@ -66,7 +53,7 @@ withDefaults(defineProps<{
   author: 'Kevin Kenfack',
   date: '',
   tags: () => [],
-  colorMode: 'dark'
+  colorMode: 'dark',
 })
 
 // Format date to display in a readable format

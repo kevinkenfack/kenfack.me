@@ -116,7 +116,6 @@ const ogImage = defineOgImage({
     colorMode: 'light'
   }
 })
-
 // Métadonnées SEO
 useSeoMeta({
   title: `${article.value?.title}`,
@@ -153,7 +152,7 @@ useHead({
         '@type': 'BlogPosting',
         headline: article.value?.title,
         description: article.value?.description,
-        image: `${config.public.siteUrl}${article.value?.image}`,
+        image: `${config.public.siteUrl}${article.value?.thumbnail}`,
         author: {
           '@type': 'Person',
           name: 'Kevin Kenfack',
