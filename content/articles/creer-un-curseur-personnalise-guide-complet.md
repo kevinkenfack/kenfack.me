@@ -1,5 +1,5 @@
 ---
-title: "Créer un Curseur Personnalisé Guide Complet pour les Développeurs Web"
+title: "Créer un Curseur Personnalisé Guide Complet pour débutants."
 description: "Apprenez à concevoir un curseur unique et interactif pour votre site web"
 published: 2025/03/26
 slug: "creer-un-curseur-personnalise-guide-complet"

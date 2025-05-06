@@ -1,74 +1,109 @@
+<script lang="ts" setup>
+/**
+ * @credits NuxtLabs <https://nuxtlabs.com/>
+ * @see https://github.com/nuxt/nuxt.com/blob/main/components/OgImage/Docs.vue
+ * Adapté pour Kevin Kenfack
+ */
+import { computed } from 'vue'
+
+const props = withDefaults(defineProps<{ title?: string, description?: string, headline?: string }>(), {
+  title: 'title',
+  description: 'description',
+  headline: 'kenfack.me',
+})
+
+const title = computed(() => (props.title || '').slice(0, 60))
+const description = computed(() => (props.description || '').slice(0, 200))
+</script>
+
 <template>
-  <div class="h-full w-full" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(to bottom right, #111827, #1f2937, #000000);">
-    <!-- Formes décoratives -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20" style="display: flex;">
-      <div class="absolute top-[-80px] left-[-80px] w-[320px] h-[320px] rounded-full bg-emerald-500 blur-3xl"></div>
-      <div class="absolute bottom-[40px] right-[40px] w-[240px] h-[240px] rounded-full bg-emerald-400 blur-3xl"></div>
-      <div class="absolute top-[50%] left-[50%] w-[160px] h-[160px] rounded-full bg-emerald-300 blur-3xl" style="transform: translateX(-50%) translateY(-50%)"></div>
-    </div>
-    
-    <!-- Contenu principal -->
-    <div style="display: flex; flex-direction: column; width: 100%; height: 100%; padding: 80px; position: relative; z-index: 10;">
-      <!-- Bordure verte sur le côté gauche -->
-      <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 16px; background: linear-gradient(to bottom, #34d399, #059669);"></div>
-      
+  <div style="width: 100%; height: 100%; background-color: black; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box;">
+    <!-- Container principal -->
+    <div style="width: 100%; height: 100%; display: flex; border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 12px; overflow: hidden; position: relative;">
+      <!-- Effet décoratif en arrière-plan (petit) -->
+      <div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; opacity: 0.4; z-index: 1;">
+        <svg width="500" height="500" viewBox="0 0 629 593" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_f_199_94966)">
+            <path d="M628.5 -578L639.334 -94.4223L806.598 -548.281L659.827 -87.387L965.396 -462.344L676.925 -74.0787L1087.69 -329.501L688.776 -55.9396L1160.22 -164.149L694.095 -34.9354L1175.13 15.7948L692.306 -13.3422L1130.8 190.83L683.602 6.50012L1032.04 341.989L668.927 22.4412L889.557 452.891L649.872 32.7537L718.78 511.519L628.5 36.32L538.22 511.519L607.128 32.7537L367.443 452.891L588.073 22.4412L224.955 341.989L573.398 6.50012L126.198 190.83L564.694 -13.3422L81.8734 15.7948L562.905 -34.9354L96.7839 -164.149L568.224 -55.9396L169.314 -329.501L580.075 -74.0787L291.604 -462.344L597.173 -87.387L450.402 -548.281L617.666 -94.4223L628.5 -578Z" fill="#10b981" />
+          </g>
+          <defs>
+            <filter id="filter0_f_199_94966" x="0.873535" y="-659" width="1255.25" height="1251.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="40.5" result="effect1_foregroundBlur_199_94966" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Grand dégradé en haut à droite -->
+      <div style="position: absolute; top: 0; right: 0; width: 629px; height: 593px; opacity: 0.3; z-index: 1;">
+        <svg
+          width="629"
+          height="593"
+          viewBox="0 0 629 593"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter1_f_199_94966)">
+            <path d="M628.5 -578L639.334 -94.4223L806.598 -548.281L659.827 -87.387L965.396 -462.344L676.925 -74.0787L1087.69 -329.501L688.776 -55.9396L1160.22 -164.149L694.095 -34.9354L1175.13 15.7948L692.306 -13.3422L1130.8 190.83L683.602 6.50012L1032.04 341.989L668.927 22.4412L889.557 452.891L649.872 32.7537L718.78 511.519L628.5 36.32L538.22 511.519L607.128 32.7537L367.443 452.891L588.073 22.4412L224.955 341.989L573.398 6.50012L126.198 190.83L564.694 -13.3422L81.8734 15.7948L562.905 -34.9354L96.7839 -164.149L568.224 -55.9396L169.314 -329.501L580.075 -74.0787L291.604 -462.344L597.173 -87.387L450.402 -548.281L617.666 -94.4223L628.5 -578Z" fill="#10b981" />
+          </g>
+          <defs>
+            <filter
+              id="filter1_f_199_94966"
+              x="0.873535"
+              y="-659"
+              width="1255.25"
+              height="1251.52"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="40.5" result="effect1_foregroundBlur_199_94966" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+
       <!-- Contenu principal -->
-      <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; margin-left: 48px;">
-        
-        <!-- Titre et description -->
-        <div style="margin-top: auto; margin-bottom: auto;">
-          <h1 style="font-size: 70px; font-weight: 900; color: white; line-height: 1.1; margin-bottom: 24px;">
+      <div style="display: flex; width: 100%; height: 100%; z-index: 2;">
+        <!-- Zone de texte (côté gauche) -->
+        <div style="flex: 3; padding: 60px 40px; display: flex; flex-direction: column; justify-content: center;">
+          <!-- Site name / headline -->
+          <div style="background-color: rgba(16, 185, 129, 0.1); border-left: 3px solid #10b981; padding: 6px 12px; margin-bottom: 30px; display: inline-block; align-self: flex-start;">
+            <p style="color: #10b981; margin: 0; font-size: 18px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">
+              {{ headline }}
+            </p>
+          </div>
+          
+          <!-- Titre -->
+          <h1 style="color: white; font-size: 60px; line-height: 1.2; margin: 0 0 24px 0; font-weight: 700;">
             {{ title }}
           </h1>
+          
+          <!-- Description 
+          <p style="color: #E4E4E7; font-size: 22px; line-height: 1.5; margin: 0; opacity: 0.9; max-width: 90%;">
+            {{ description }}
+          </p>
+          -->
         </div>
         
-        <!-- Tags et URL -->
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 32px;">
-          <div style="display: flex; gap: 12px;">
-            <span 
-              v-for="(tag, index) in tags" 
-              :key="index" 
-              style="padding: 8px 16px; background-color: rgba(16, 185, 129, 0.2); color: #34d399; border-radius: 9999px; font-size: 18px;"
-            >
-              #{{ tag }}
-            </span>
+        <!-- Zone de profil (côté droit) -->
+        <div style="flex: 1; background-color: rgba(16, 185, 129, 0.05); display: flex; flex-direction: column; align-items: center; justify-content: center; border-left: 1px solid rgba(16, 185, 129, 0.2);">
+          <!-- Photo de profil 
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #10b981; margin-bottom: 20px;">
+            <img src="/picture.jpg" alt="Kevin Kenfack" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
+          -->
+          
+          <!-- Nom 
+          <p style="color: white; font-size: 18px; font-weight: 600; margin: 0; text-align: center;">
+            Kevin Kenfack
+          </p>
+          -->
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-withDefaults(defineProps<{
-  title?: string
-  description?: string
-  author?: string
-  date?: string
-  tags?: string[]
-  colorMode?: string
-}>(), {
-  title: 'Article de blog',
-  description: '',
-  author: 'Kevin Kenfack',
-  date: '',
-  tags: () => [],
-  colorMode: 'dark',
-})
-
-// Format date to display in a readable format
-function formatDate(dateString: string) {
-  if (!dateString) return '';
-  
-  try {
-    const date = new Date(dateString);
-    return new Intl.DateTimeFormat('fr-FR', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }).format(date);
-  } catch (e) {
-    return dateString;
-  }
-}
-</script>
