@@ -12,7 +12,7 @@ const props = withDefaults(defineProps<{ title?: string, description?: string, h
   headline: 'kenfack.me',
 })
 
-const title = computed(() => (props.title || '').slice(0, 60))
+const title = computed(() => (props.title || '').slice(0, 120))
 const description = computed(() => (props.description || '').slice(0, 200))
 </script>
 
