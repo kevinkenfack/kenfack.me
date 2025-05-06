@@ -116,6 +116,11 @@ const ogImage = defineOgImage({
     title: article.value?.title,
     description: article.value?.description,
     headline: 'kenfack.me',
+    date: article.value?.published ? new Date(article.value.published).toLocaleDateString('fr-FR', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    }) : '',
     colorMode: 'light'
   }
 })
