@@ -106,20 +106,31 @@ const { data: recommendedArticles } = await useAsyncData("recommended-articles",
     .find()
 );
 
+// Génération de l'image OpenGraph pour l'article
+const ogImage = defineOgImage({
+  component: 'BlogArticle',
+  props: {
+    title: article.value?.title,
+    description: article.value?.description,
+    author: 'Kevin Kenfack',
+    colorMode: 'light'
+  }
+})
+
 // Métadonnées SEO
 useSeoMeta({
   title: `${article.value?.title}`,
   description: article.value?.description,
   ogTitle: article.value?.title,
   ogDescription: article.value?.description,
-  ogImage: `${config.public.siteUrl}${article.value?.opengraph}`,
+  ogImage: ogImage,
   ogImageWidth: '1200',
   ogImageHeight: '630',
   ogImageAlt: article.value?.title,
   twitterCard: "summary_large_image",
   twitterTitle: article.value?.title,
   twitterDescription: article.value?.description,
-  twitterImage: `${config.public.siteUrl}${article.value?.opengraph}`,
+  twitterImage: ogImage,
   twitterImageAlt: article.value?.title,
   twitterSite: config.public.siteUrl,
   articleAuthor: "Kevin Kenfack",

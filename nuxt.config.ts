@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   // Garder le SSR activé (c'est le comportement par défaut de Nuxt)
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: [
    "@nuxt/ui",
    "nuxt-icon",
