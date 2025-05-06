@@ -67,9 +67,9 @@ const description = computed(() => (props.description || '').slice(0, 200))
       </div>
 
       <!-- Contenu principal -->
-      <div style="display: flex; width: 100%; height: 100%; z-index: 2;">
+      <div style="display: flex; width: 100%; height: 100%; z-index: 2; position: relative;">
         <!-- Zone de texte (côté gauche) -->
-        <div style="flex: 3; padding: 60px 40px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="flex: 1; padding: 60px 40px 0 40px; display: flex; flex-direction: column; justify-content: flex-start;">
           <!-- Site name / headline -->
           <div style="background-color: rgba(16, 185, 129, 0.1); border-left: 3px solid #10b981; padding: 6px 12px; margin-bottom: 30px; display: inline-block; align-self: flex-start;">
             <p style="color: #10b981; margin: 0; font-size: 18px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">
@@ -89,19 +89,11 @@ const description = computed(() => (props.description || '').slice(0, 200))
           -->
         </div>
         
-        <!-- Zone de profil (côté droit) -->
-        <div style="flex: 1; background-color:#34d399; display: flex; flex-direction: column; align-items: center; justify-content: center; border-left: 1px solid rgba(16, 185, 129, 0.2);">
-          <!-- Photo de profil 
-          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #10b981; margin-bottom: 20px;">
+        <!-- Photo en bas à droite -->
+        <div style="position: absolute; bottom: 40px; right: 40px; z-index: 3;">
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #10b981;">
             <img src="/picture.jpg" alt="Kevin Kenfack" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
-          -->
-          
-          <!-- Nom 
-          <p style="color: white; font-size: 18px; font-weight: 600; margin: 0; text-align: center;">
-            Kevin Kenfack
-          </p>
-          -->
         </div>
       </div>
     </div>

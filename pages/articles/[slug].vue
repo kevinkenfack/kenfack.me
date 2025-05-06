@@ -115,7 +115,12 @@ const ogImage = defineOgImage({
   props: {
     title: article.value?.title,
     description: article.value?.description,
-    author: 'Kevin Kenfack',
+    headline: 'kenfack.me',
+    date: article.value?.published ? new Date(article.value.published).toLocaleDateString('fr-FR', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    }) : '',
     colorMode: 'light'
   }
 })
