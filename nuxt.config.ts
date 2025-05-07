@@ -84,7 +84,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: [], // désactive le rendu de pages à build time
     },
-    compatibilityDate: '2025-05-04'
+    compatibilityDate: '2025-05-07'
   },
    // Configuration minimale pour empêcher le prérendu sans supprimer Nitro
   //  routeRules: {
