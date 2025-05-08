@@ -29,7 +29,7 @@
           Sites Web Premium pour Startups.
         </h3>
 
-        <p class="text-gray-600 dark:text-gray-300 mb-6">
+        <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
           Transformez votre vision en une présence web exceptionnelle. Design, performance et impact.
         </p>
 
