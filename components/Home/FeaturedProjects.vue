@@ -1,14 +1,15 @@
 <template>
-  <div class="bg-white dark:bg-black border border-gray-200 dark:border-[#1a1a1a] rounded-lg p-6 transition-all duration-300 hover:border-gray-300 dark:hover:border-[#2a2a2a] hover:bg-gray-50 dark:hover:bg-[#080808]">
-    <h2 class="
-      uppercase text-xs font-semibold 
-      text-gray-500 dark:text-gray-400 
-      mb-6 
-      border-b pb-2 
-      border-gray-200 dark:border-gray-800
-    ">
-      PROJETS EN VEDETTE
-    </h2>
+  <div>
+    <div class="mb-6 flex items-center gap-3">
+      <div
+        class="flex-none rounded-full p-1 text-primary-500 bg-primary-500/10"
+      >
+        <div class="h-1.5 w-1.5 rounded-full bg-current"></div>
+      </div>
+      <h2 class="uppercase text-xs font-semibold text-gray-400">
+        PROJETS EN VEDETTE
+      </h2>
+    </div>
     <div class="space-y-4">
       <AppProjectCard
         v-for="(project, id) in projects"
@@ -18,15 +19,10 @@
     </div>
     <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
-        label="Tout les projets &rarr;"
+        label="Tous les projets &rarr;"
         to="/projects"
         variant="link"
         color="gray"
-        class="
-          text-gray-600 dark:text-gray-300 
-          hover:text-primary-400 
-          transition-colors duration-300
-        "
       />
     </div>
   </div>
@@ -34,6 +30,8 @@
 
 <script lang="ts" setup>
 const { data: projects } = await useAsyncData("projects-home", () =>
-  queryContent("/projects").limit(3).find()
+  queryContent("/projects")
+    .limit(3)
+    .find()
 );
 </script>

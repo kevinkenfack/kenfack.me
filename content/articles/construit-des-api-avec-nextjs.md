@@ -3,8 +3,8 @@ title: "Création d'API avec Next.js : Guide Complet."
 description: "Ce guide vous montre comment créer des API avec Next.js : configuration, App Router, gestion des méthodes HTTP, routage dynamique, middleware réutilisable et couche d'API dédiée."
 published: 2025/03/27
 slug: "construit-des-api-avec-nextjs"
-thumbnail: "/blogs/thumbnail.jpg"
-opengraph: "/blogs/og-image.jpg"
+thumbnail: "/blogs/construit-des-api-avec-nextjs/thumbnail.webp"
+opengraph: ""
 ---
 
 ## 1. Premiers Pas
