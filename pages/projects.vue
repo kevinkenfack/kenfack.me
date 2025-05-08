@@ -11,7 +11,7 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const config = useRuntimeConfig();
 const description =
   "J'ai travaillé sur des tonnes de petits projets au fil des ans, mais voici ceux dont je suis le plus fier. Beaucoup d'entre eux sont open-source, donc si vous voyez quelque chose qui vous intéresse, regardez le code et contribuez si vous avez des idées pour l'améliorer.";
