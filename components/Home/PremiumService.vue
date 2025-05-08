@@ -7,9 +7,7 @@
         src="/uiroom-preview.png" 
         alt="Uiroom Website Preview" 
         class="w-full h-full object-cover object-top"
-        placeholder="[50, 30]"
-        width="auto"
-        height="auto"
+        :placeholder="[50, 25]"
         format="webp"
       />
     </div>
@@ -34,6 +32,40 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center gap-4">
+          <div class="sm:hidden flex flex-col items-center w-full mb-4">
+            <div class="flex items-center justify-center gap-3 mb-3">
+              <div class="flex items-center -space-x-3">
+                <NuxtImg
+                  src="/client1.webp" 
+                  alt="Client Avatar 1" 
+                  placeholder
+                  format="webp"
+                  class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 object-cover"
+                />
+                <NuxtImg 
+                  src="/client2.webp" 
+                  alt="Client Avatar 2" 
+                  class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 object-cover"
+                  placeholder
+                  format="webp"
+                />
+                <NuxtImg 
+                  src="/client3.webp" 
+                  alt="Client Avatar 3"
+                  placeholder
+                  format="webp"
+                  class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 object-cover"
+                />
+                <div class="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center text-xs font-bold text-primary-600 dark:text-primary-300 border-2 border-white dark:border-gray-800">
+                  54+
+                </div>
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                ⭐⭐⭐⭐ Trusted by mores
+              </p>
+            </div>
+          </div>
+
           <NuxtLink
             to="https://uiroom.pro"
             target="_blank"
@@ -42,6 +74,38 @@
             Découvrir
             <span aria-hidden="true">→</span>
           </NuxtLink>
+          
+          <div class="flex flex-col sm:flex-row items-center gap-3">
+            <div class="hidden sm:flex items-center -space-x-3">
+              <NuxtImg
+                src="/client1.webp" 
+                alt="Client Avatar 1" 
+                placeholder
+                format="webp"
+                class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 object-cover"
+              />
+              <NuxtImg 
+                src="/client2.webp" 
+                alt="Client Avatar 2" 
+                placeholder
+                format="webp"
+                class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 object-cover"
+              />
+              <NuxtImg 
+                src="/client3.webp" 
+                alt="Client Avatar 3"
+                placeholder
+                format="webp"
+                class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 object-cover"
+              />
+              <div class="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center text-xs font-bold text-primary-600 dark:text-primary-300 border-2 border-white dark:border-gray-800">
+                54+
+              </div>
+            </div>
+            <p class="hidden sm:block text-xs text-gray-500 dark:text-gray-400 ml-3">
+              ⭐⭐⭐⭐ startups, founders chose us.
+            </p>
+          </div>
         </div>
       </div>
     </div>
