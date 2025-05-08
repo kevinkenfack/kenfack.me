@@ -2,24 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@property --gradient-angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
 
-@layer components {
-  .bg-primary\/40 {
-    background-color: rgb(16 185 129 / 0.4);
-  }
-}
-
-@layer utilities {
-  .animate-rotate-gradient {
-    background: linear-gradient(var(--gradient-angle), rgb(16, 185, 129), rgb(0, 0, 0));
-    animation: rotate-gradient 3s linear infinite;
-  }
-}
 
 @keyframes rotate-gradient {
   0% {

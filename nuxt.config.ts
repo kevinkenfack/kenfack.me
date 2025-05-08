@@ -1,5 +1,4 @@
 export default defineNuxtConfig({
-  // Garder le SSR activé (c'est le comportement par défaut de Nuxt)
   devtools: { enabled: true },
   modules: [
    "@nuxt/ui",
@@ -49,6 +48,7 @@ export default defineNuxtConfig({
   },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
+    scrollToTop: true,
     head: {
       meta: [
         { name: 'theme-color', content: '#000000' }
@@ -81,6 +81,6 @@ export default defineNuxtConfig({
     transpile: ['@nuxt/ui']
   },
   nitro: {
-    compatibilityDate: '2025-05-07'
+    compatibilityDate: '2025-05-08',
   }
 });
