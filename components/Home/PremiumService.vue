@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-900/40 rounded-2xl overflow-hidden">
+  <div class="relative bg-gradient-to-br from-primary-50 to-primary-50 dark:from-primary-900/20 dark:to-primary-900/20 rounded-2xl overflow-hidden">
     <div class="absolute inset-0 bg-grid-pattern pointer-events-none opacity-5"></div>
 
     <div class="w-full h-full rounded-t-2xl overflow-hidden">
