@@ -71,6 +71,16 @@ const description = "Développeur et entrepreneur passionné, je conçois des si
 
 useSeoMeta({
   title: "Kevin Kenfack",
+  htmlAttrs: {
+    lang: 'fr'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    }
+  ],
   description,
   ogTitle: "Kevin Kenfack",
   ogDescription: description,

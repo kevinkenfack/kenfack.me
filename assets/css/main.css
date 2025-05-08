@@ -34,4 +34,9 @@
   :root {
     --color-primary: 14 165 233;
   }
+
+  a, button, [role="button"], input, label {
+    -webkit-tap-highlight-color: initial;
+    tap-highlight-color: initial;
+  }
 }

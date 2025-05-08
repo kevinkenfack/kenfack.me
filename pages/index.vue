@@ -7,6 +7,7 @@
       <HomeSocialLinks />
       <HomeFeaturedProjects />
       <HomeFeaturedArticles />
+      <HomeTestimonials />
       <HomeContactCTA />
     </div>
   </main>

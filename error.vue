@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 const config = useRuntimeConfig();
-const description = "Page non trouvée - La page que vous recherchez n'existe pas ou a été déplacée.";
+const description = "La page que vous recherchez n'existe pas ou a été déplacée.";
 
 useSeoMeta({
   title: "404 Not Found",

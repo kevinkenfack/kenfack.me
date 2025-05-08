@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   ],
   tailwindcss: {
     configPath: 'tailwind.config.ts',
+    quiet: true,
   },
   css: [
     '~/assets/css/main.css'
@@ -53,7 +54,7 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#000000' }
       ],
       htmlAttrs: {
-        lang: "en",
+        lang: "fr",
         class: "h-full",
       },
       bodyAttrs: {
@@ -80,14 +81,6 @@ export default defineNuxtConfig({
     transpile: ['@nuxt/ui']
   },
   nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: [], // désactive le rendu de pages à build time
-    },
     compatibilityDate: '2025-05-07'
-  },
-   // Configuration minimale pour empêcher le prérendu sans supprimer Nitro
-  //  routeRules: {
- // '/**': { prerender: false }
-// //}
+  }
 });
