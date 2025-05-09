@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @keyframes rotate-gradient {
   0% {
     --gradient-angle: 0deg;
