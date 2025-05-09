@@ -2,7 +2,6 @@
   <NuxtLoadingIndicator 
     color="#10b981"
     :duration=5000
-    errorColor="#ffdf20"
     />
   <AppNavbar />
   <div class="h-32"></div>
