@@ -6,20 +6,22 @@
  */
 import { computed } from 'vue'
 
-const props = withDefaults(defineProps<{ title?: string, description?: string, headline?: string }>(), {
+const props = withDefaults(defineProps<{ title?: string, description?: string, headline?: string, date?: string }>(), {
   title: 'title',
   description: 'description',
   headline: 'kenfack.me',
+  date: '',
 })
 
 const title = computed(() => (props.title || '').slice(0, 120))
 const description = computed(() => (props.description || '').slice(0, 200))
+const date = computed(() => (props.date || '').slice(0, 200))
 </script>
 
 <template>
-  <div style="width: 100%; height: 100%; background-color: black; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box;">
+  <div style="width: 100%; height: 100%; background-color: white; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box;">
     <!-- Container principal -->
-    <div style="width: 100%; height: 100%; display: flex; border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 12px; overflow: hidden; position: relative;">
+    <div style="width: 100%; height: 100%; display: flex; border: 10px solid rgba(16, 185, 129, 0.3); border-radius: 12px; overflow: hidden; position: relative;">
       <!-- Effet décoratif en arrière-plan (petit) -->
       <div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; opacity: 0.4; z-index: 1;">
         <svg width="500" height="500" viewBox="0 0 629 593" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,14 +73,14 @@ const description = computed(() => (props.description || '').slice(0, 200))
         <!-- Zone de texte (côté gauche) -->
         <div style="flex: 1; padding: 60px 40px 0 40px; display: flex; flex-direction: column; justify-content: flex-start;">
           <!-- Site name / headline -->
-          <div style="background-color: rgba(16, 185, 129, 0.1); border-left: 3px solid #10b981; padding: 6px 12px; margin-bottom: 30px; display: inline-block; align-self: flex-start;">
-            <p style="color: #10b981; margin: 0; font-size: 18px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">
-              {{ headline }}
+          <div style="background-color: #10b981; border-left: 3px solid #10b981; padding: 6px 12px; margin-bottom: 30px; display: inline-block; align-self: flex-start;">
+            <p style="color: black; margin: 0; font-size: 18px; text-transform: uppercase; font-weight: 800; letter-spacing: 1px;">
+              {{ date }}
             </p>
           </div>
           
           <!-- Titre -->
-          <h1 style="color: white; font-size: 70px; line-height: 1.2; margin: 0 0 24px 0; font-weight: 700;">
+          <h1 style="color: black; font-size: 70px; line-height: 1.2; margin: 0 0 24px 0; font-weight: 700;">
             {{ title }}
           </h1>
           
