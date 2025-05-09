@@ -22,17 +22,3 @@
   filter: blur(1rem);
 }
 </style>
-<<<<<<< HEAD
--->
-=======
--->
-
-
-<!--
-<div class="min-h-screen bg-gray-100 dark:bg-black 
-  bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)] 
-  dark:bg-[radial-gradient(rgba(255,255,255,0.10)_1px,transparent_1px)] 
-  bg-[size:22px_22px] bg-repeat bg-fixed"> 
-</div>
--->
->>>>>>> d132d83a293c5fbd66af98291ee2a3d0aeeb8c1d
