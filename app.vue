@@ -11,7 +11,6 @@
   <AppFooter />
 </template>
 
-
 <style>
 .page-enter-active,
 .page-leave-active {
@@ -23,61 +22,17 @@
   filter: blur(1rem);
 }
 </style>
-
-
-<!--
-<div class="min-h-screen bg-gray-100 dark:bg-black 
-  bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)] 
-  dark:bg-[radial-gradient(rgba(255,255,255,0.10)_1px,transparent_1px)] 
-  bg-[size:22px_22px] bg-repeat bg-fixed"> 
-</div>
-
-<!--
-<div class="min-h-screen bg-gray-100 dark:bg-black 
-  bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)] 
-  dark:bg-[radial-gradient(rgba(255,255,255,0.10)_1px,transparent_1px)] 
-  bg-[size:22px_22px] bg-repeat bg-fixed"> 
-</div>
-
-
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  transform: translateY(10px);
-}
-</style>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-transition: all 0.2s;
-}
-
-.page-leave-to {
-opacity: 0;
-transform: translateY(-5px);
-}
-
-.page-enter-from {
-opacity: 0;
-transform: translateY(5px);
-}
-</style>
+<<<<<<< HEAD
 -->
+=======
+-->
+
+
+<!--
+<div class="min-h-screen bg-gray-100 dark:bg-black 
+  bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)] 
+  dark:bg-[radial-gradient(rgba(255,255,255,0.10)_1px,transparent_1px)] 
+  bg-[size:22px_22px] bg-repeat bg-fixed"> 
+</div>
+-->
+>>>>>>> d132d83a293c5fbd66af98291ee2a3d0aeeb8c1d
