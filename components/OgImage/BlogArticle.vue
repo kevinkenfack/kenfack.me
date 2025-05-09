@@ -2,7 +2,7 @@
 /**
  * @credits NuxtLabs <https://nuxtlabs.com/>
  * @see https://github.com/nuxt/nuxt.com/blob/main/components/OgImage/Docs.vue
- * Adapté pour Kevin Kenfack
+ * Adapté pour Kevin Kenfack Joel
  */
 import { computed } from 'vue'
 
