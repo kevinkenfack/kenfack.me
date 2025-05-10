@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-gradient-to-br from-primary-50 to-primary-50 dark:from-primary-900/20 dark:to-primary-900/20 rounded-2xl overflow-hidden">
+  <div class="border border-primary-200 dark:border-primary-800 relative bg-gradient-to-br from-primary-50 to-primary-50 dark:from-primary-900/20 dark:to-primary-900/20 rounded-2xl overflow-hidden">
     <div class="absolute inset-0 bg-grid-pattern pointer-events-none opacity-5"></div>
     <!-- Image 
     <div class="w-full h-full rounded-t-2xl overflow-hidden">
@@ -25,7 +25,7 @@
         </div>
 
         <h3 class="text-xl md:text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-4">
-          Sites Web Premium pour Startups.
+          Sites web premium pour SaaS & startups.
         </h3>
 
         <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <p class="text-xs text-gray-500 dark:text-gray-400">
-                ⭐⭐⭐⭐ Trusted by mores
+                ⭐⭐⭐⭐⭐ Trusted by more users
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@
               </div>
             </div>
             <p class="hidden sm:block text-xs text-gray-500 dark:text-gray-400 ml-3">
-              ⭐⭐⭐⭐ startups, founders chose us.
+              ⭐⭐⭐⭐⭐ Trusted by more users
             </p>
           </div>
         </div>

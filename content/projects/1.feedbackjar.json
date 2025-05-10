@@ -4,5 +4,6 @@
   "description": "Outil de création de flux utilisateurs, wireframes et diagrammes. Versions web (localStorage) et Node.js (SQLite) pour collaboration.",
   "thumbnail": "/projects/flowlite.png",
   "status": "WIP",
-  "opensource": true
+  "opensource": true,
+  "github": "https://github.com/kenfack/flow"
 }
