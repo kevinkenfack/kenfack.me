@@ -4,7 +4,7 @@
   <div class="h-32"></div>
   <UContainer>
     <NuxtLayout>
-      <NuxtPage :key="$route.fullPath" />
+      <NuxtPage/>
     </NuxtLayout>
   </UContainer>
   <div class="h-32"></div>
