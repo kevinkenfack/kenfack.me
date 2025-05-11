@@ -7,11 +7,11 @@
   "homepage": "https://kenfack.me",
   "license": "MIT",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --hostname 0.0.0.0 --port 3000",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+  "build": "nuxt build",
+  "dev": "nuxt dev",
+  "generate": "nuxt generate",
+  "preview": "nuxt preview",
+  "postinstall": "nuxt prepare && yarn yarn-upgrade-all"
   },
   "devDependencies": {
     "@nuxt/content": "^2.10.0",
@@ -32,6 +32,7 @@
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.9",
     "unstorage": "^1.15.0"
+    "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {
     "@iconify-json/lucide": "1.1.145",
