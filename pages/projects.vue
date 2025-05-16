@@ -11,7 +11,10 @@
   </main>
 </template>
 
-<script setup lang="ts">
+<script setup>
+definePageMeta({
+  scrollToTop: false
+});
 const config = useRuntimeConfig();
 const description =
   "J'ai travaillé sur des tonnes de petits projets au fil des ans, mais voici ceux dont je suis le plus fier. Beaucoup d'entre eux sont open-source, donc si vous voyez quelque chose qui vous intéresse, regardez le code et contribuez si vous avez des idées pour l'améliorer.";
@@ -61,7 +64,8 @@ useHead({
   ]
 });
 
-const { data: projects } = await useAsyncData("projects-all", () =>
+const { data: projects } = useLazyAsyncData("projects-all", () =>
   queryContent("/projects").find()
 );
+
 </script>

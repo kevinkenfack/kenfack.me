@@ -34,6 +34,10 @@ const config = useRuntimeConfig();
 const description =
   "Des choses géniales que j'ai trouvées sur internet. Cette page est encore WIP, je veux ajouter des recherches comme bmrks.com";
 
+  definePageMeta({
+  scrollToTop: false
+});
+
 useSeoMeta({
   title: "Favoris | Kevin Kenfack",
   description,

@@ -30,6 +30,10 @@ const config = useRuntimeConfig();
 const description =
   "Quelques expériences aléatoires que je fais pendant mon temps libre.";
 
+  definePageMeta({
+  scrollToTop: false
+}); 
+
 useSeoMeta({
   title: "Laboratoire | Kevin Kenfack",
   description,

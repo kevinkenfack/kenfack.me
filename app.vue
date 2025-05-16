@@ -11,6 +11,12 @@
   <AppFooter />
 </template>
 
+<script setup>
+function handleScroll() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+</script>
+
 <style>
 /* Page transition */
 .page-enter-active,
@@ -19,7 +25,7 @@
 }
 .page-enter-from,
 .page-leave-to {
-  opacity: 5;
+  opacity: 1;
   filter: blur(1rem);
 }
 </style>

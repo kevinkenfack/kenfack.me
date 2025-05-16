@@ -5,10 +5,12 @@
     >
       <ContentDoc v-slot="{ doc }" tag="article">
         <article>
+          <!-- Titre -->
           <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
             {{ doc.title }}
           </h1>
 
+          <!-- Image -->
           <NuxtImg
             v-if="doc.thumbnail"
             :src="doc.thumbnail"
@@ -94,14 +96,17 @@ const route = useRoute();
 const { slug } = route.params;
 const isTocOpen = ref(false);
 
+definePageMeta({
+  scrollToTop: false
+});
+
 // Récupérer l'article actuel avec la table des matières
-const { data: article } = await useAsyncData(`article-${slug}`, () =>
-  queryContent(`/articles/${slug}`)
-    .findOne()
+const { data: article } = useLazyAsyncData(`article-${slug}`, () =>
+  queryContent(`/articles/${slug}`).findOne()
 );
 
 // Récupérer les articles recommandés
-const { data: recommendedArticles } = await useAsyncData("recommended-articles", () =>
+const { data: recommendedArticles } = useLazyAsyncData("recommended-articles", () =>
   queryContent("/articles")
     .where({ _path: { $ne: `/articles/${slug}` } })
     .sort({ published: -1 })

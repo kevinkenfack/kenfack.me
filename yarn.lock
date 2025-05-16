@@ -1105,6 +1105,34 @@
     unimport "^5.0.1"
     untyped "^2.0.0"
 
+"@nuxt/kit@^3.13.0":
+  version "3.17.3"
+  resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.17.3.tgz#58a54b0155b1a3b277f434de024d7d5e738c38e2"
+  integrity sha512-aw6u6mT3TnM/MmcCRDMv3i9Sbm5/ZMSJgDl+N+WsrWNDIQ2sWmsqdDkjb/HyXF20SNwc2891hRBkaQr3hG2mhA==
+  dependencies:
+    c12 "^3.0.3"
+    consola "^3.4.2"
+    defu "^6.1.4"
+    destr "^2.0.5"
+    errx "^0.1.0"
+    exsolve "^1.0.5"
+    ignore "^7.0.4"
+    jiti "^2.4.2"
+    klona "^2.0.6"
+    knitwork "^1.2.0"
+    mlly "^1.7.4"
+    ohash "^2.0.11"
+    pathe "^2.0.3"
+    pkg-types "^2.1.0"
+    scule "^1.3.0"
+    semver "^7.7.1"
+    std-env "^3.9.0"
+    tinyglobby "^0.2.13"
+    ufo "^1.6.1"
+    unctx "^2.4.1"
+    unimport "^5.0.1"
+    untyped "^2.0.0"
+
 "@nuxt/schema@3.17.2", "@nuxt/schema@^3.15.0", "@nuxt/schema@^3.16.2":
   version "3.17.2"
   resolved "https://registry.npmjs.org/@nuxt/schema/-/schema-3.17.2.tgz#e1315dfac1beac2a8dbd2b20d4b2018bf2196a51"
@@ -1998,6 +2026,11 @@
   resolved "https://registry.npmjs.org/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz#f066abfcd1cbe66267cdbbf0de010d8a41b41597"
   integrity sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==
 
+"@types/web-bluetooth@^0.0.21":
+  version "0.0.21"
+  resolved "https://registry.npmjs.org/@types/web-bluetooth/-/web-bluetooth-0.0.21.tgz#525433c784aed9b457aaa0ee3d92aeb71f346b63"
+  integrity sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==
+
 "@types/yauzl@^2.9.1":
   version "2.10.3"
   resolved "https://registry.npmjs.org/@types/yauzl/-/yauzl-2.10.3.tgz#e9b2808b4f109504a03cda958259876f61017999"
@@ -2434,6 +2467,15 @@
     "@vueuse/shared" "11.3.0"
     vue-demi ">=0.14.10"
 
+"@vueuse/core@^13.0.0", "@vueuse/core@^13.2.0":
+  version "13.2.0"
+  resolved "https://registry.npmjs.org/@vueuse/core/-/core-13.2.0.tgz#f19afa06449110ff3a649ea06b661c3c37c43c34"
+  integrity sha512-n5TZoIAxbWAQ3PqdVPDzLgIRQOujFfMlatdI+f7ditSmoEeNpPBvp7h2zamzikCmrhFIePAwdEQB6ENccHr7Rg==
+  dependencies:
+    "@types/web-bluetooth" "^0.0.21"
+    "@vueuse/metadata" "13.2.0"
+    "@vueuse/shared" "13.2.0"
+
 "@vueuse/head@^2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@vueuse/head/-/head-2.0.0.tgz#a4570c0933368a436796c2f737d56e169a8f0864"
@@ -2471,6 +2513,25 @@
   resolved "https://registry.npmjs.org/@vueuse/metadata/-/metadata-11.3.0.tgz#be7ac12e3016c0353a3667b372a73aeeee59194e"
   integrity sha512-pwDnDspTqtTo2HwfLw4Rp6yywuuBdYnPYDq+mO38ZYKGebCUQC/nVj/PXSiK9HX5otxLz8Fn7ECPbjiRz2CC3g==
 
+"@vueuse/metadata@13.2.0":
+  version "13.2.0"
+  resolved "https://registry.npmjs.org/@vueuse/metadata/-/metadata-13.2.0.tgz#a839028d43c3206b674dd1d59a77b9c80f4d9d5f"
+  integrity sha512-kPpzuQCU0+D8DZCzK0iPpIcXI+6ufWSgwnjJ6//GNpEn+SHViaCtR+XurzORChSgvpHO9YC8gGM97Y1kB+UabA==
+
+"@vueuse/motion@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/@vueuse/motion/-/motion-3.0.3.tgz#94f8b18bfff95acd3c24c938a051daf06e13ed0f"
+  integrity sha512-4B+ITsxCI9cojikvrpaJcLXyq0spj3sdlzXjzesWdMRd99hhtFI6OJ/1JsqwtF73YooLe0hUn/xDR6qCtmn5GQ==
+  dependencies:
+    "@vueuse/core" "^13.0.0"
+    "@vueuse/shared" "^13.0.0"
+    defu "^6.1.4"
+    framesync "^6.1.2"
+    popmotion "^11.0.5"
+    style-value-types "^5.1.2"
+  optionalDependencies:
+    "@nuxt/kit" "^3.13.0"
+
 "@vueuse/nuxt@^11.1.0":
   version "11.3.0"
   resolved "https://registry.npmjs.org/@vueuse/nuxt/-/nuxt-11.3.0.tgz#832ed704b3e330939c9be2c6dcbaa4c4aac19c48"
@@ -2495,6 +2556,11 @@
   integrity sha512-P8gSSWQeucH5821ek2mn/ciCk+MS/zoRKqdQIM3bHq6p7GXDAJLmnRRKmF5F65sAVJIfzQlwR3aDzwCn10s8hA==
   dependencies:
     vue-demi ">=0.14.10"
+
+"@vueuse/shared@13.2.0", "@vueuse/shared@^13.0.0":
+  version "13.2.0"
+  resolved "https://registry.npmjs.org/@vueuse/shared/-/shared-13.2.0.tgz#26d89103201bafc7daa4dfc5bc92b512526b788b"
+  integrity sha512-vx9ZPDF5HcU9up3Jgt3G62dMUfZEdk6tLyBAHYAG4F4n73vpaA7J5hdncDI/lS9Vm7GA/FPlbOmh9TrDZROTpg==
 
 "@whatwg-node/disposablestack@^0.0.6":
   version "0.0.6"
@@ -4448,6 +4514,13 @@ fraction.js@^4.3.7:
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.7.tgz#06ca0085157e42fda7f9e726e79fefc4068840f7"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
+framesync@6.1.2, framesync@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.npmjs.org/framesync/-/framesync-6.1.2.tgz#755eff2fb5b8f3b4d2b266dd18121b300aefea27"
+  integrity sha512-jBTqhX6KaQVDyus8muwZbBeGGP0XgujBRbQ7gM7BRdS3CadCZIHiawyzYLnafYcvZIh5j8WE7cxZKFn7dXhu9g==
+  dependencies:
+    tslib "2.4.0"
+
 fresh@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/fresh/-/fresh-2.0.0.tgz#8dd7df6a1b3a1b3a5cf186c05a5dd267622635a4"
@@ -4961,6 +5034,11 @@ hex-rgb@^4.1.0:
   version "4.3.0"
   resolved "https://registry.npmjs.org/hex-rgb/-/hex-rgb-4.3.0.tgz#af5e974e83bb2fefe44d55182b004ec818c07776"
   integrity sha512-Ox1pJVrDCyGHMG9CFg1tmrRUMRPRsAWYc/PinY0XzJU4K7y7vjNoLKIQ7BR5UJMCxNN8EM1MNDmHWA/B3aZUuw==
+
+hey-listen@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
+  integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
 hookable@^5.5.3:
   version "5.5.3"
@@ -7363,6 +7441,16 @@ playwright-core@^1.52.0:
   resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.52.0.tgz#238f1f0c3edd4ebba0434ce3f4401900319a3dca"
   integrity sha512-l2osTgLXSMeuLZOML9qYODUQoPPnUsKsb5/P6LJ2e6uPKXUdPK5WYhN4z03G+YNbWmGDY4YENauNu4ZKczreHg==
 
+popmotion@^11.0.5:
+  version "11.0.5"
+  resolved "https://registry.npmjs.org/popmotion/-/popmotion-11.0.5.tgz#8e3e014421a0ffa30ecd722564fd2558954e1f7d"
+  integrity sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==
+  dependencies:
+    framesync "6.1.2"
+    hey-listen "^1.0.8"
+    style-value-types "5.1.2"
+    tslib "2.4.0"
+
 portfinder@^1.0.26:
   version "1.0.37"
   resolved "https://registry.npmjs.org/portfinder/-/portfinder-1.0.37.tgz#92b754ef89a11801c8efe4b0e5cd845b0064c212"
@@ -8727,6 +8815,14 @@ structured-clone-es@^1.0.0:
   resolved "https://registry.npmjs.org/structured-clone-es/-/structured-clone-es-1.0.0.tgz#cc37f73c519c0d9e5d8d8efd3a7a9250207e688d"
   integrity sha512-FL8EeKFFyNQv5cMnXI31CIMCsFarSVI2bF0U0ImeNE3g/F1IvJQyqzOXxPBRXiwQfyBTlbNe88jh1jFW0O/jiQ==
 
+style-value-types@5.1.2, style-value-types@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/style-value-types/-/style-value-types-5.1.2.tgz#6be66b237bd546048a764883528072ed95713b62"
+  integrity sha512-Vs9fNreYF9j6W2VvuDTP7kepALi7sk0xtk2Tu8Yxi9UoajJdEVpNpCov0HsLTqXvNGKX+Uv09pkozVITi1jf3Q==
+  dependencies:
+    hey-listen "^1.0.8"
+    tslib "2.4.0"
+
 stylehacks@^7.0.5:
   version "7.0.5"
   resolved "https://registry.npmjs.org/stylehacks/-/stylehacks-7.0.5.tgz#86985a8c810f88e4a1a34804b0fe350686457ca9"
@@ -9029,6 +9125,11 @@ ts-interface-checker@^0.1.9:
   version "0.1.13"
   resolved "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
+
+tslib@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 tslib@^1.8.1:
   version "1.14.1"

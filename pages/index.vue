@@ -12,3 +12,9 @@
     </div>
   </main>
 </template>
+
+<script setup>
+definePageMeta({
+  scrollToTop: false
+});
+</script>

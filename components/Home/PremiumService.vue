@@ -25,7 +25,7 @@
         </div>
 
         <h3 class="text-xl md:text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-4">
-          Sites web premium pour SaaS & startups.
+         Obtenez un site web premium pour votre SaaS & startup.
         </h3>
 
         <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <p class="text-xs text-gray-500 dark:text-gray-400">
-                ⭐⭐⭐⭐⭐ Trusted by more users
+                ⭐⭐⭐⭐⭐ Trusted by more
               </p>
             </div>
           </div>

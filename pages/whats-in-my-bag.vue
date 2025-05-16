@@ -76,11 +76,21 @@ useHead({
   ]
 });
 
-const { data: items } = await useAsyncData("uses", () =>
-  queryContent("/uses").find()
-);
-const hardware = items.value.filter((item) => item.category === "hardware");
-const software = items.value.filter((item) => item.category === "software");
-const desk = items.value.filter((item) => item.category === "desk");
-const other = items.value.filter((item) => item.category === "others");
+const { data: items } = useLazyAsyncData('uses', () =>
+  queryContent('/uses').find()
+)
+
+const hardware = computed(() =>
+  items.value?.filter((item) => item.category === 'hardware') ?? []
+)
+const software = computed(() =>
+  items.value?.filter((item) => item.category === 'software') ?? []
+)
+const desk = computed(() =>
+  items.value?.filter((item) => item.category === 'desk') ?? []
+)
+const other = computed(() =>
+  items.value?.filter((item) => item.category === 'others') ?? []
+)
+
 </script>

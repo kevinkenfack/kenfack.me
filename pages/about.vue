@@ -98,6 +98,10 @@ import TechStack from '~/components/App/TechStack.vue';
 const config = useRuntimeConfig();
 const description = "Développeur web basé à Douala, Cameroun. Spécialisé dans la création d'interfaces utilisateur modernes et performantes.";
 
+definePageMeta({
+  scrollToTop: false
+});
+
 useSeoMeta({
   title: "À propos - Kevin Kenfack",
   description,

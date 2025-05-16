@@ -50,7 +50,11 @@ useHead({
   ]
 });
 
-const { data: articles } = await useAsyncData("all-articles", () =>
+definePageMeta({
+  scrollToTop: false
+});
+
+const { data: articles } = useLazyAsyncData("all-articles", () =>
   queryContent("/articles").sort({ published: -1 }).find()
 );
 </script>
