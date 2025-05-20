@@ -11,12 +11,6 @@
   <AppFooter />
 </template>
 
-<script setup>
-function handleScroll() {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
-</script>
-
 <style>
 /* Page transition */
 .page-enter-active,

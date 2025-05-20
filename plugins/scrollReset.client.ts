@@ -16,7 +16,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     // Pour les liens d'ancrage dans la page
     nuxtApp.hook('app:mounted', () => {
       document.addEventListener('click', (e) => {
-        const link = e.target.closest('a');
+        const link = (e.target as Element).closest('a');
         if (link && link.hash && link.origin === window.location.origin) {
           e.preventDefault();
           
@@ -35,7 +35,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             });
             
             // Mettre à jour l'URL avec le hash
-            history.pushState(null, null, link.hash);
+             history.pushState(null, '', link.hash);
           }
         }
       });
