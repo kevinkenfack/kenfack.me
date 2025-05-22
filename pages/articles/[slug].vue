@@ -117,6 +117,8 @@ const { data: recommendedArticles } = useLazyAsyncData("recommended-articles", (
 // Génération de l'image OpenGraph pour l'article
 const ogImage = defineOgImage({
   component: 'BlogArticle',
+  width: 1200,
+  height: 630,
   props: {
     title: article.value?.title,
     description: article.value?.description,

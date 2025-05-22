@@ -49,7 +49,6 @@ export default defineNuxtConfig({
   },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
-    scrollToTop: false,
     head: {
       meta: [
         { name: 'theme-color', content: '#000000' }
