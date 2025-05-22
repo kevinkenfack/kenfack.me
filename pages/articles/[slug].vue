@@ -122,7 +122,7 @@ const ogImage = defineOgImage({
   props: {
     title: article.value?.title,
     description: article.value?.description,
-    headline: 'kenfack.me',
+    headline: 'Kevin Kenfack',
     date: article.value?.published ? new Date(article.value.published).toLocaleDateString('fr-FR', { 
       year: 'numeric', 
       month: 'long', 
