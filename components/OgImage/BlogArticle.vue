@@ -9,7 +9,7 @@ import { computed } from 'vue'
 const props = withDefaults(defineProps<{ title?: string, description?: string, headline?: string }>(), {
   title: 'title',
   description: 'description',
-  headline: 'Kevin Kenfack',
+  headline: 'Kevin Kenfack Developer & Entrepreneur',
 })
 
 const title = computed(() => (props.title || '').slice(0, 120))
@@ -17,9 +17,9 @@ const description = computed(() => (props.description || '').slice(0, 200))
 </script>
 
 <template>
-  <div style="width: 100%; height: 100%; background-color: black; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box;">
+  <div style="width: 100%; height: 100%; background-color: black; display: flex; align-items: center; justify-content: center; padding: 15px; box-sizing: border-box;">
     <!-- Container principal -->
-    <div style="width: 100%; height: 100%; display: flex; border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 12px; overflow: hidden; position: relative;">
+    <div style="width: 100%; height: 100%; display: flex; border: 15px solid rgba(16, 185, 129, 0.3); border-radius: 12px; overflow: hidden; position: relative;">
       <!-- Effet décoratif en arrière-plan (petit) -->
       <div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; opacity: 0.4; z-index: 1;">
         <svg width="500" height="500" viewBox="0 0 629 593" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +71,8 @@ const description = computed(() => (props.description || '').slice(0, 200))
         <!-- Zone de texte (côté gauche) -->
         <div style="flex: 1; padding: 60px 40px 0 40px; display: flex; flex-direction: column; justify-content: flex-start;">
           <!-- Site name / headline -->
-          <div style="background-color: rgba(16, 185, 129, 0.1); border-left: 3px solid #10b981; padding: 6px 12px; margin-bottom: 30px; display: inline-block; align-self: flex-start;">
-            <p style="color: #10b981; margin: 0; font-size: 18px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">
+          <div style="background-color: rgba(16, 185, 129, 0.1); border-left: 3px solid #10b981; padding: 6px 12px; margin-bottom: 50px; display: inline-block; align-self: flex-start;">
+            <p style="color: #10b981; margin: 0; font-size: 30px; text-transform: capitalize; font-weight: 600; letter-spacing: 1px;">
               {{ headline }}
             </p>
           </div>
@@ -91,7 +91,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
         
         <!-- Photo en bas à droite -->
         <div style="position: absolute; bottom: 40px; right: 40px; z-index: 3;">
-          <div style="width: 120px; height: 120px; border-radius: 10%; overflow: hidden; border: 3px solid #10b981;">
+          <div style="width: 150px; height: 150px; border-radius: 10%; overflow: hidden; border: 3px solid #10b981;">
             <img src="/picture.jpg" alt="Kevin Kenfack" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
         </div>
