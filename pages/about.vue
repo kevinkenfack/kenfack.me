@@ -9,9 +9,8 @@
                 src="/picture.png"
                 alt="Kevin Kenfack"
                 class="w-full h-full md:h-full lg:h-full rounded-2xl object-cover brightness-75"
-                placeholder
+                :placeholder="[30, 30]"
                 format="webp"
-                :placeholder="[60, 30]"
               />
             </div>
           </div>
