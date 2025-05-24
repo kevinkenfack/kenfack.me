@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 256 256">
-  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
-  <defs>
-    <style>
-      .st0, .st1 {
-        fill: none;
-      }
-
-      .st1 {
-        stroke: #000;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 32px;
-      }
-    </style>
-  </defs>
-  <rect class="st0" width="256" height="256"/>
-  <line class="st1" x1="208" y1="128" x2="128" y2="208"/>
-  <line class="st1" x1="192" y1="40" x2="40" y2="192"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:32;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<path d="M222.8,249.9H33.2c-14.9,0-27-12.1-27-27V33.2c0-14.9,12.1-27,27-27h189.7c14.9,0,27,12.1,27,27v189.7
+	C249.9,237.8,237.8,249.9,222.8,249.9z"/>
+<g>
+	<rect x="32" y="32" class="st0" width="192" height="192"/>
+	<line class="st1" x1="188" y1="128" x2="128" y2="188"/>
+	<line class="st1" x1="176" y1="62" x2="62" y2="176"/>
+</g>
 </svg>

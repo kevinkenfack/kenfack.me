@@ -2,16 +2,18 @@
   <main class="min-h-screen">
     <div class="w-full max-w-6xl mx-auto px-0 sm:px-4 py-4">
       <div class="mb-12">
-        <div class="relative group w-full">
-          <div class="absolute -inset-0.5 rounded-2xl animate-rotate-gradient"></div>
-          <div class="relative">
-            <NuxtImg
-              src="/picture.jpg"
-              alt="Kevin Kenfack"
-              class="w-full h-full md:h-full lg:h-full rounded-2xl object-cover brightness-75"
-              placeholder
-              format="webp"
-            />
+        <div class="relative group w-full profile-container">
+          <div class="profile-glowing-border">
+            <div class="relative profile-image-wrapper">
+              <NuxtImg
+                src="/picture.png"
+                alt="Kevin Kenfack"
+                class="w-full h-full md:h-full lg:h-full rounded-2xl object-cover brightness-75"
+                placeholder
+                format="webp"
+                :placeholder="[60, 30]"
+              />
+            </div>
           </div>
         </div>
         <div class="mt-8">
@@ -159,4 +161,100 @@ useHead({
     }
   ]
 });
-</script> 
+</script>
+
+<style scoped>
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.profile-container {
+  width: 100%;
+}
+
+.profile-glowing-border {
+  position: relative;
+  width: 100%;
+  padding: 4px;
+  border-radius: 1rem;
+  background: linear-gradient(var(--gradient-angle), 
+    #3b82f6, 
+    #8b5cf6, 
+    #ef4444, 
+    #f59e0b, 
+    #10b981, 
+    #3b82f6
+  );
+  animation: rotation 3s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.profile-glowing-border:hover {
+  background: linear-gradient(var(--gradient-angle), 
+    #1d4ed8, 
+    #7c3aed, 
+    #dc2626, 
+    #d97706, 
+    #059669, 
+    #1d4ed8
+  );
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+}
+
+.profile-image-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mode sombre */
+.dark .profile-glowing-border {
+  background: linear-gradient(var(--gradient-angle), 
+    #60a5fa, 
+    #a78bfa, 
+    #f87171, 
+    #fbbf24, 
+    #34d399, 
+    #60a5fa
+  );
+}
+
+.dark .profile-glowing-border:hover {
+  background: linear-gradient(var(--gradient-angle), 
+    #3b82f6, 
+    #8b5cf6, 
+    #ef4444, 
+    #f59e0b, 
+    #10b981, 
+    #3b82f6
+  );
+  box-shadow: 0 0 30px rgba(96, 165, 250, 0.4);
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-glowing-border {
+    padding: 3px;
+  }
+}
+</style>

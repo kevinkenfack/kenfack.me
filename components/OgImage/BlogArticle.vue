@@ -9,7 +9,7 @@ import { computed } from 'vue'
 const props = withDefaults(defineProps<{ title?: string, description?: string, headline?: string }>(), {
   title: 'title',
   description: 'description',
-  headline: 'Kevin Kenfack Developer & Entrepreneur',
+  headline: 'Kevin Kenfack - Software Engineer',
 })
 
 const title = computed(() => (props.title || '').slice(0, 120))
@@ -19,7 +19,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
 <template>
   <div style="width: 100%; height: 100%; background-color: black; display: flex; align-items: center; justify-content: center; padding: 15px; box-sizing: border-box;">
     <!-- Container principal -->
-    <div style="width: 100%; height: 100%; display: flex; border: 15px solid rgba(16, 185, 129, 0.3); border-radius: 12px; overflow: hidden; position: relative;">
+    <div style="width: 100%; height: 100%; display: flex; border: 15px solid rgba(16, 185, 129, 0.6); border-radius: 12px; overflow: hidden; position: relative;">
       <!-- Effet décoratif en arrière-plan (petit) -->
       <div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; opacity: 0.4; z-index: 1;">
         <svg width="500" height="500" viewBox="0 0 629 593" fill="none" xmlns="http://www.w3.org/2000/svg">

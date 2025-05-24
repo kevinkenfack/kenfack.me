@@ -6,7 +6,7 @@
         :src="article.thumbnail"
         :alt="article.title"
         class="w-full aspect-square object-cover rounded-lg mb-4"
-        :placeholder="[50, 30]"
+        :placeholder="[60, 30]"
         width="auto"
         height="auto"
         format="webp"
